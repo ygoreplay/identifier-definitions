@@ -1,4 +1,4 @@
-deck: sample1(白龙) [999]
+deck: sample1(백룡) [999]
 	! 89631139 main >= 3 # 白龙
 	! 38517737 main >= 3 # 亚白
 	! 45467446 main <= 1 # 灵龙
@@ -218,7 +218,7 @@ deck: sample(初始卡组) [999]
 	refuse: 巨神兵
 	refuse: 兔
 
-deck: sample(影依) [999]
+deck: sample(섀도르) [999]
 	! 59546797 main >= 1 # 妖型
 	restrains: >= 18
 		! 3717252 main >= 2  # 影依兽
@@ -244,7 +244,7 @@ deck: sample(影依) [999]
 		! 84749824 main >= 1 # 神警
 	refuse: 影依
 
-deck: sample(十二兽) [999]
+deck: sample(십이수) [999]
 	! 77150143 main >= 3 # 马
 	! 31755044 main >= 3 # 蛇
 	! 4145852 main >= 1  # 羊
@@ -273,7 +273,7 @@ deck: sample(十二兽) [999]
 	(男巫)
 		! 4392470 side >= 1
 
-deck: sample(黑羽) [999]
+deck: sample(BF) [999]
 	restrains: >= 18
 		! 75498415 main >= 1 # 希洛克
 		! 81105204 main >= 2 # 波刃剑
@@ -297,7 +297,7 @@ deck: sample(黑羽) [999]
 		! 89040386 main >= 1 # 反闪
 		! 84749824 main >= 1 # 神警
 
-deck: Sample(秘旋谍) [999]
+deck: Sample(SPYRAL) [999]
 	restrains: >= 2
 		! 44330098 main >= 1 # 格斯
 		! 70095155 main >= 1 # 电子龙

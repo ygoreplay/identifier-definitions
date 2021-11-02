@@ -2,14 +2,14 @@
 # This line is testing update.
 
 #0x1 正义盟军	A・O・J
-deck: 正义盟军 [1]
+deck: A·O·J [1]
 	! [正义盟军] ori > 10
 
 #0x2 次世代	ジェネクス
-deck: 次世代 [1]
+deck: 제넥스 [1]
 	! [次世代] ori > 10
 	refuse: 次世代
-tag: 次世代
+tag: 제넥스
 	config: global
 	! [次世代] main >= 3
 
@@ -18,28 +18,28 @@ tag: 次世代
 #setname 0x3 N/A
 
 #0x4 亚马逊	アマゾネス
-deck: 亚马逊 [1]
+deck: 아마조네스 [1]
 	! [亚马逊] ori > 10
 	refuse: 亚马逊
 	refuse: 反伤 # 亚马逊剑士
-tag: 亚马逊
+tag: 아마조네스
 	config: global
 	config: upgrade
 	! [亚马逊] ori >= 6
 
 #0x5 秘仪之力	アルカナフォース
-deck: 秘仪之力 [1]
+deck: 아르카나포스 [1]
 	! [秘仪之力] main > 10
 
 #0x6 暗黑界	暗黒界
-deck: 暗黑界 [1]
+deck: 암흑계 [1]
 	refuse: 暗黑界
 	or:
 		! [暗黑界] main >= 15
 		and:
 			! [暗黑界] main > 9
 			! 34230233 main >= 1 # 暗黑界的龙神 格拉法
-tag: 暗黑界
+tag: 암흑계
 	config: global
 	config: upgrade
 	! [暗黑界] main > 7
@@ -49,10 +49,10 @@ tag: 暗黑界
 set: 古代的机械系列
 	inner set: 古代的机械
 	37694547 # 齿车街
-deck: 古代机械 [1]
+deck: 엔틱기어 [1]
 	! [古代的机械系列] ori >= 12
 	refuse: 古代机械
-tag: 古代机械
+tag: 엔틱기어
 	config: config
 	config: upgrade
 	! [古代的机械系列] main >= 4
@@ -83,35 +83,35 @@ set: DH系列
 	99357565 # D3
 	4008212  # 打破命运
 
-deck: 英雄 [0]
+deck: 히어로 [0]
 	! [英雄] ori > 9
 	! [英雄] ori < 15
 	refuse: hero
-deck: 英雄 [3]
+deck: 히어로 [3]
 	! [英雄] ori >= 15
 	refuse: hero
-tag: hero
+tag: 히어로
 	config: global
 	config: upgrade
 	! [英雄] main >= 4
 	or:
 		! 213326 main >= 2 # E-紧急呼唤
 		! 8949584 main >= 2 # 英雄到来
-deck: 元素英雄 [2]
+deck: 엘리멘틀히어로 [2]
 	! [元素英雄] ori > 8
 	! [DH系列] ori <= 6
 	! [幻影英雄系列] ori <= 6
 	! [邪心英雄系列] ori <= 6
 	refuse: hero
-deck: 幻影英雄 [2]
+deck: 비전히어로 [2]
 	! [幻影英雄系列] ori > 8
 	! [元素英雄] ori <= 6
 	! [DH系列] ori <= 6
 	refuse: hero
-deck: 邪心英雄 [2]
+deck: 이블히어로 [2]
 	! [邪心英雄系列] ori >= 8
 	refuse: hero
-deck: 假面英雄 [2]
+deck: 마스크드히어로 [2]
 	! [假面英雄] ex >= 5
 	! 23204029  ex >= 1 # 对极英雄 混沌侠
 	refuse: hero
@@ -121,7 +121,7 @@ tag: 假面
 	config: upgrade
 	! [假面英雄] ex >= 1
 	! [变化] main >= 1
-deck: 命运英雄 [2]
+deck: 데스티니히어로 [2]
 	! [DH系列] ori > 12
 	! [元素英雄] ori <= 6
 	! [幻影英雄系列] ori <= 4
@@ -130,11 +130,11 @@ deck: 命运英雄 [2]
 #0x9 新宇	ネオス
 #0x1e 茧状体	C（コクーン）
 #0x1f 新空间侠	N（ネオスペーシアン）
-tag: 新空间侠
+tag: 네오스페이시언
 	config: global
 	config: upgrade
 	! [新空间侠] ori >= 6
-tag: 新宇
+tag: 네오스
 	config: global
 	! [新宇] ori > 8
 set: 新宇系列
@@ -150,7 +150,7 @@ set: 新宇系列
 	69270537 # 接触分离
 	73239437 # 二重英雄攻击
 	74414885 # 新空间扩界
-deck: 新宇侠 [4]
+deck: 네오스侠 [4]
 	! [新宇系列] main >= 6
 	! [新宇系列] ori >= 15
 	refuse: hero
@@ -158,15 +158,15 @@ deck: 新宇侠 [4]
 	refuse: 新空间侠
 
 #0xa 入魔	ヴェルズ
-deck: 入魔 [2]
+deck: 벨즈 [2]
 	! [入魔] ori > 10
 
 #0x100a 侵入魔鬼	インヴェルズ
-deck: 侵入魔鬼 [1]
+deck: 인벨즈 [1]
 	! [侵入魔鬼] main > 10
 
 #0xb 永火	インフェルニティ
-deck: 永火 [1]
+deck: 인페르니티 [1]
 	! [永火] ori > 7
 	refuse: 永火
 #	! 永火恶魔 >= 1 #保留意见 TCG恶魔限制
@@ -178,7 +178,7 @@ deck: 永火 [1]
 		! 99177923 main < 1
 	(霸王门)
 		! 69610326 main >= 1 #霸王眷龙
-tag: 永火
+tag: 인페르니티
 	config: global
 	config: upgrade
 	! [永火] main >= 2 # 恶魔罩子
@@ -188,10 +188,10 @@ set: 外星系列
 	inner set: 外星
 	51192573 # 宇宙兽 冈吉尔
 	68319538 # 宇宙城 哥尔加
-deck: 外星 [1]
+deck: 에일리언 [1]
 	! [外星系列] ori > 10
 	refuse: 外星
-tag: 外星
+tag: 에일리언
 	config: global
 	config: upgrade
 	! [外星系列] ori > 5
@@ -208,78 +208,78 @@ set: X-剑士系列
 	6112401  # 身剑一体
 	13504844 # 加特姆士的紧急指令
 	44901281 # 剑之落穴
-deck: X-剑士 [1]
+deck: X-세이버 [1]
 	! [X-剑士系列] ori >= 10
 
 #0x300d XX-剑士	XX－セイバー
 
 #0x400d 元素灵剑士	エレメントセイバー
-tag: 元素灵剑士
+tag: 엘리멘트세이버
 	config: global
 	config: upgrade
 	! [元素灵剑士] main >= 6
-deck: 元素灵剑士 [1]
+deck: 엘리멘트세이버 [1]
 	! [元素灵剑士] main >= 9
 	refuse: 灵神
 	refuse: 元素灵剑士
 
 #0xe 电气	エレキ
-deck: 电气 [1]
+deck: 일렉 [1]
 	! [电气] ori > 6
 	refuse: 电气
-tag: 电气
+tag: 일렉
 	config: global
 	! [电气] main >= 4
 
 #0xf 扰乱	おジャマ
-deck: 扰乱 [1]
+deck: 방해꾼 [1]
 	! [扰乱] main > 7
 	refuse: 扰乱
-tag: 扰乱
+tag: 방해꾼
 	config: global
 	config: upgrade
 	! [扰乱] main >= 5
 
 #0x10 薰风	ガスタ
-deck: 薰风 [1]
+deck: 가스타 [1]
 	! [薰风] ori > 10
 	refuse: 薰风
-tag: 薰风
+tag: 가스타
 	config: global
 	! [薰风] main >= 4
 
 #0x11 机巧	カラクリ
-tag: 机巧
+tag: 자동기계
 	config: global
 	! [机巧] main >= 4
 	! [机巧] ex >= 2
-deck: 机巧 [1]
+deck: 자동기계 [1]
 	! [机巧] main > 6
 	refuse: 机巧
 
 #0x12 青蛙	ガエル
-deck: 青蛙 [1]
+deck: 개구리 [1]
 	! [青蛙] main > 8
 	refuse: 青蛙
-tag: 青蛙
+tag: 개구리
 	config: upgrade
 	config: global
 	! [青蛙] main >= 3
 
 #0x13 机皇	機皇
-deck: 机皇 [1]
+deck: 기황 [1]
 	! [机皇] main > 6
 	refuse: 机皇帝
 	refuse: 反转机皇
 
 #0x3013 机皇帝	機皇帝
-tag: 机皇帝
+tag: 기황제
 	config: upgrade
 	config: global
 	! [机皇帝] main >= 4 
 
 #0x6013 机皇兵	機皇兵
-tag: 反转机皇
+tag: 反转기황
 	config: upgrade
 	config: global
 	! [机皇兵] main >= 1
@@ -288,13 +288,13 @@ tag: 反转机皇
 #setname 0x14 N/A
 
 #0x15 巨大战舰	巨大戦艦
-deck: 巨大战舰 [1]
+deck: 거대전함 [1]
 	! [巨大战舰] main > 7
 	(要塞)
 		! 975299 main >= 1 # 巨大要塞 泽洛斯
 
 #0x16 机人	ロイド
-deck: 机人 [1]
+deck: 로이드 [1]
 	! [机人] ori >= 8
 
 #0x1016 交通机人	ビークロイド
@@ -308,7 +308,7 @@ set: 疾行机人系列
 	36730805 # 疾行漂移
 	85704698 # 再生骰子
 	88482761 # 掷骰战斗
-deck: 疾行机人 [2]
+deck: SR [2]
 	! [疾行机人系列] ori > 8
 	refuse: 同调系
 	refuse: 陀螺
@@ -317,14 +317,14 @@ deck: 疾行机人 [2]
 #感觉可以再抢救一下
 
 #0x1017 同调士	シンクロン
-tag: 同调士
+tag: 싱크론
 	config: global
 	config: upgrade
 	! [同调士] main >= 3
 	! 96363153 main >= 1 # 调律
 
 #0x2017 同调龙	シンクロ・ドラゴン
-tag: 同调龙
+tag: 싱크로드래곤
 	config: global
 	config: upgrade
 	! [同调龙] ex >= 4
@@ -337,7 +337,7 @@ set: 云魔物系列
 	55375684 # 召唤云
 	45653036 # 暴风雨
 	18158397 # 自然灾害
-deck: 云魔物 [1]
+deck: 운마물 [1]
 	! [云魔物系列] main >= 8
 
 #0x19 剑斗兽	剣闘獣
@@ -346,7 +346,7 @@ set: 剑斗斗器系列
 	25407406 #剑斗兽的斗器 短剑
 	52496105 #剑斗兽的斗器 护臂
 	8730435 #剑斗兽的斗器 恶魔之盾
-deck: 剑斗兽 [1]
+deck: 검투수 [1]
 	! [剑斗] ori >= 10
 	refuse: hero
 	refuse: 猫僧
@@ -371,11 +371,11 @@ set: 黑蝎系列
 	6967870  # 黑蝎-拆除陷阱的克里夫
 	61587183 # 黑蝎-飞速逃跑的齐克
 	76922029 # 首领 扎鲁格
-deck: 黑蝎 [1]
+deck: 전갈 [1]
 	! [黑蝎系列] main >= 8
 
 #0x1b 幻兽	幻獣
-deck: 幻兽 [1]
+deck: 환상수 [1]
 	! [幻兽] main >= 10
 
 #0x101b 幻兽机	幻獣機
@@ -386,7 +386,7 @@ set: 幻兽机系列
 	93211810 # 超音速波
 	70875955 # 空中补给
 	6260554 #弹幕回避
-deck: 幻兽机 [2]
+deck: 환상수기 [2]
 	! [幻兽机系列] ori >= 8
 
 #setname 0x1c N/A
@@ -417,27 +417,27 @@ set: 核成系列
 	18517177 # 核心爆破
 	34545235 # 钢核的光辉
 	55117418 # 能力吸收核心
-deck: 核成 [1]
+deck: 코아키메일 [1]
 	! [核成系列] main >= 10
 	(兽战士Beat)
 		! [核成兽战士] main >= 5
 		! [炎舞] main >= 3
-deck: 岩石Beat [2]
+deck: 岩石비트 [2]
 	! [岩石四兄弟] main >= 6
 
 #0x20 紫炎	紫炎
 
 #0x21 地缚神	地縛神
-deck: 地缚神 [1]
+deck: 지박신 [1]
 	! [地缚神] main >= 4
 	refuse: 地缚神
-tag: 地缚神
+tag: 지박신
 	config: global
 	config: upgrade
 	! [地缚神] main >= 1
 
 #0x22 朱罗纪	ジュラック
-deck: 朱罗纪 [1]
+deck: 쥬락 [1]
 	! [朱罗纪] main >= 10
 	! [朱罗纪] ex >= 2
 tag: 瓜巴龙
@@ -445,25 +445,25 @@ tag: 瓜巴龙
 	! 11012887 main >= 3
 
 #0x23 罪	Sin
-deck: 罪 [1]
+deck: Sin [1]
 	! [罪] main >= 6
 	refuse: 罪
 #	! 罪世界 >= 1
-tag: 罪
+tag: Sin
 	config: global
 	! [罪] main >= 2
 
 #0x24 废铁	スクラップ
-deck: 废铁 [1]
+deck: 스크랩 [1]
 	! [废铁] main >= 8
 	refuse: 废铁
-tag: 废铁
+tag: 스크랩
 	config: global
 	config: upgrade
 	! [废铁] ori >= 5
 
 #0x25 链	C（チェーン）
-deck: 链 [1]
+deck: C [1]
 	! [链] main >= 5
 
 #0x26 变形斗士	D（ディフォーマー）
@@ -474,49 +474,49 @@ set: 变形斗士系列
 	7030340 # 百机夜工
 	78586116 # 加电插头
 	92890308 # 变形
-deck: 变形斗士 [1]
+deck: D [1]
 	! [变形斗士系列] main >= 10
 
 #0x27 科技属	TG（テックジーナス）
-deck: 科技属 [1]
+deck: TG [1]
 	! [科技属] ori >= 8
 	refuse: 科技属
-tag: 科技属
+tag: TG
 	! [科技属] ori >= 5
 
 #0x28 电池人	電池メン
-deck: 电池人 [1]
+deck: 전지맨 [1]
 	! [电池人] main >= 8	
 	refuse: 电池人
-tag: 电池人
+tag: 전지맨
 	config: global
 	! [电池人] main >= 5
 
 #0x29 龙骑兵团	ドラグニティ
-deck: 龙骑兵团 [1]
+deck: 드래그니티 [1]
 	! [龙骑兵团] ori > 10
 	refuse: 龙骑兵团
 	refuse: 同调系
-tag: 龙骑兵团
+tag: 드래그니티
 	config: global
 	config: upgrade
 	! [龙骑兵团] main >= 5
 
 #0x2a 自然	ナチュル
-deck: 自然 [1]
+deck: 나츄르 [1]
 	! [自然] ori > 10
 
 #0x2b 忍者
-deck: 忍者 [1]
+deck: 첩자 [1]
 	! [忍者] main >= 8
 	refuse: 忍者
-tag: 忍者
+tag: 첩자
 	config: global
 	config: upgrade
 	! [忍者] main >= 5
 
 #0x2c 炎狱	フレムベル
-deck: 炎狱 [1]
+deck: 플레임벨 [1]
 	! [炎狱] main >= 5
 
 #setname 0x2d N/A
@@ -526,64 +526,64 @@ set: 守墓系列
 	inner set: 守墓
 	inner set: 王家长眠之谷
 	72405967 # 王家的牲祭
-deck: 守墓 [1]
+deck: 묘지기 [1]
 	! [守墓系列] main > 10
 	(牲祭)
 		! 72405967 >= 1 # 王家的牲祭
 
 #0x2f 冰结界	氷結界
-deck: 冰结界 [1]
+deck: 빙결계 [1]
 	! [冰结界] ori > 10
 	refuse: 冰结界
-tag: 冰结界
+tag: 빙결계
 	config: globla
 	config: upgrade
 	! [冰结界] main >= 5
 
 #0x30 大日	ヴァイロン
-deck: 大日 [1]
+deck: 바이론 [1]
 	! [大日] ori > 10
 	(波纹)
 		! 95515060 main >= 1 # 静寂之杖-波纹
 
 #0x31 命运女郎	フォーチュンレディ
-deck: 命运女郎 [1]
+deck: 포츈레이디 [1]
 	! [命运女郎] ori >= 8
 	refuse: 命运女郎
-tag: 命运女郎
+tag: 포츈레이디
 	config: global
 	config: upgrade
 	! [命运女郎] main >= 5
 
 #0x32 火山	ヴォルカニック
-deck: 火山 [1]
+deck: 볼캐닉 [1]
 	! [火山] main >= 10
 	refuse: 火山
-tag: 火山
+tag: 볼캐닉
 	config: global
 	config: upgrade
 	! [火山] main >= 3
 	! [烈焰加农炮] main >= 2
 
 #0x33 黑羽	BF（ブラックフェザー）
-tag: 黑羽
+tag: BF
 	config: global
 	config: upgrade
 	! [黑羽] ori >= 5
 
-deck: 黑羽 [1]
+deck: BF [1]
 	! [黑羽] ori >= 9
 	refuse: 同调系
 	refuse: 黑羽
 
-deck: 旋风黑羽 [10]
+deck: 선풍BF [10]
 	! [黑羽] ori >= 9
 	! 91351370 main >= 2 # 黑旋风
 	! 72714392 main < 2 # 黑羽-大旆之伐由
 	refuse: 同调系
 	refuse: 黑羽
 
-deck: 墓地黑羽 [10]
+deck: 墓地BF [10]
 	! [黑羽] ori >= 9
 	! 72714392 main >= 2 # 黑羽-大旆之伐由
 	! 91351370 main < 2 # 黑旋风
@@ -603,7 +603,7 @@ set: 宝玉系列
 	11136371 # 反击宝石
 	63806265 # 虹之引力
 #0x34 宝玉	宝玉
-deck: 宝玉 [1]
+deck: 보옥 [1]
 	! [宝玉系列] main > 10
 
 #0x1034 宝玉兽	宝玉獣
@@ -614,40 +614,40 @@ tag: 虹龙
 	! [究极宝玉神] main >= 1
 
 #0x35 魔轰神	魔轟神
-deck: 魔轰神 [1]
+deck: 마굉신 [1]
 	! [魔轰神] ori > 10
 
 #0x36 机甲	マシンナーズ
-deck: 机甲 [1]
+deck: 머시너즈 [1]
 	! [机甲] main >= 12
 	refuse: 机甲
-tag: 机甲
+tag: 머시너즈
 	config: global
 	config: upgrade
 	! 42940404 main >= 2 # 机甲机械骨架
 	! 5556499 main >= 2 # 机甲要塞
 
 #0x37 霞之谷	霞の谷
-tag: 霞之谷
+tag: 안개골짜기
 	config: global
 	config: upgrade
 	! [霞之谷] main >= 6
 
 #0x38 光道	ライトロード
-deck: 光道 [0]
+deck: 라이트로드 [0]
 	! [光道] main > 12
 	refuse: 光道
 	(裁龙)
 		! 57774843 main >= 1 # 裁决之龙
 	(惩戒)
 		! 19959563 main >= 1 # 惩戒之龙
-tag: 光道
+tag: 라이트로드
 	config: upgrade
 	config: global
 	! [光道] >= 6
 
 #0x39 熔岩	ラヴァル
-deck: 熔岩 [1]
+deck: 라바르 [1]
 	or:
 		! [熔岩] main >= 12
 		and:
@@ -655,10 +655,10 @@ deck: 熔岩 [1]
 			! 72142276 >= 1 # 炎热传导场
 
 #0x3a 遗式	リチュア
-deck: 遗式 [2]
+deck: 리추어 [2]
 	! [遗式] main >= 8
 	refuse: 遗式
-tag: 遗式
+tag: 리추어
 	config: global
 	config: upgrade
 	! [遗式] main >= 3
@@ -678,7 +678,7 @@ set: 真红眼系列
 	18803791 # 黑龙降临
 	32566831 # 红玉之宝札
 	52684508 # 黑炎弹
-deck: 真红眼 [1]
+deck: 붉은눈 [1]
 #	! [真红眼] main > 7
 	! [真红眼系列] ori > 10
 	refuse: 真红眼
@@ -690,7 +690,7 @@ deck: 真红眼 [1]
 		or:
 			! 11901678 ex >= 1
 			! 90660762 ex >= 1
-tag: 真红眼
+tag: 붉은눈
 	config: global
 	config: upgrade
 	or:
@@ -700,11 +700,11 @@ tag: 真红眼
 		! [真红眼系列] ori >= 8
 
 #0x3c 爬虫妖	レプティレス
-deck: 爬虫妖 [1]
+deck: 레프티레스 [1]
 	! [爬虫妖] main >= 9
 
 #0x3d 六武众	六武衆
-deck: 六武众 [1]
+deck: 여섯무사 [1]
 	! [六武众] main >= 8
 	refuse: 六武众
 	(道场)
@@ -712,25 +712,25 @@ deck: 六武众 [1]
 	(水火) #存疑
 		! 48505422 main = 3 # 真六武众-竹刀
 		! 74094021 main = 3 # 真六武众-瑞穂
-tag: 六武众
+tag: 여섯무사
 	config: global
 	! [六武众] main >= 3
 
 #0x103d 影六武众	影六武衆
 
 #0x3e 异虫	ワーム
-deck: 异虫 [1]
+deck: 웜 [1]
 	! [异虫] main >= 7
 	! 81843628 < 1 # 针虫/ニードルワーム
 	refuse: 异虫
-tag: 异虫
+tag: 웜
 	config: global
 	config: upgrade
 	! [异虫] main >= 4
 	! 81843628 < 1 # 针虫/ニードルワーム
 
 #0x3f 救世	セイヴァー
-tag: 救世龙
+tag: 세이비어龙
 	#区分救世美神
 	config: global
 	config: upgrade
@@ -738,7 +738,7 @@ tag: 救世龙
 	! [救世] ex >= 1
 
 #0x40 被封印	封印されし
-deck: 艾克佐迪亚(缺部件) [1]
+deck: 엑조디아(缺部件) [1]
 	restrains: >= 3
 		! 7902349  main >= 1 # 被封印者的左腕
 		! 70903634 main >= 1 # 被封印者的右腕
@@ -746,7 +746,7 @@ deck: 艾克佐迪亚(缺部件) [1]
 		! 8124921  main >= 1 # 被封印者的右足
 		! 33396948 main >= 1 # 被封印的艾克佐迪亚
 
-deck: 艾克佐迪亚 [2]
+deck: 엑조디아 [2]
 	! 7902349  main >= 1 # 被封印者的左腕
 	! 70903634 main >= 1 # 被封印者的右腕
 	! 44519536 main >= 1 # 被封印者的左足
@@ -770,7 +770,7 @@ set: 极星调整怪兽系列
 	61777313 # 极星天 凡娜迪丝
 	41788781 # 极星兽 古尔法克西
 	77060848 # 极星灵 暗精灵
-tag: 极星
+tag: 극성
 	config: global
 	config: upgrade
 	! [极星] >= 6
@@ -778,7 +778,7 @@ tag: 极星
 	#0x6042 极星兽	極星獣
 	#0xa042 极星灵	極星霊
 	#0x5042 极星宝	極星宝
-deck: 极星 [2]
+deck: 극성 [2]
 	! [极星] main > 6
 	! [极星调整怪兽系列] main >= 2
 	refuse: 极星
@@ -790,15 +790,15 @@ deck: 极星 [2]
 		! 93483212 ex >= 1 # 极神圣帝 奥丁
 
 #0x43 废品	ジャンク
-deck: 废品 [0]
+deck: 정크 [0]
 	! [废品] main >= 8
 
 #0x44 代行者
-deck: 代行 [1]
+deck: 대행자 [1]
 	! [代行者] main >= 5
 
 #0x45 恶魔	デーモン
-deck: 恶魔 [1]
+deck: 데몬 [1]
 	! [恶魔] main > 6
 
 #0x1045 红莲魔|恶魔	レッド・デーモン
@@ -807,7 +807,7 @@ set: 红莲魔系列
 	99585850 # 真红莲超新星龙
 	97489701 # 真红莲新星龙
 	66141736 # 红莲升龙
-tag: 红莲魔
+tag: 레드데몬
 	config: global
 	config: upgrade
 	! [红莲魔系列] ex >= 4
@@ -815,13 +815,13 @@ tag: 红莲魔
 #0x46 融合	融合/フュージョン
 
 #0x1046 融合龙	フュージョン・ドラゴン
-tag: 融合龙
+tag: 퓨전드래곤
 	config: global
 	config: upgrade
 	! [融合龙] ex >= 4
 
 #0x47 宝石	ジェム
-deck: 宝石骑士 [1]
+deck: 젬나이트 [1]
 	! [宝石] ori > 10
 	#0x1047 宝石骑士	ジェムナイト
 
@@ -836,13 +836,13 @@ set: 时械神系列
 	9409625  # 虚无械
 	36894320 # 无限械
 	72883039 # 无限光
-deck: 时械神 [1]
+deck: 시계신 [1]
 	! [时械神系列] main >= 5
 
 #0x4b 极神	極神
 
 #0x4c 落穴	落とし穴
-deck: 纯落穴 [0]
+deck: 纯함정속으로 [0]
 	! [落穴] main >= 8
 	! [虫惑魔] main < 3
 
@@ -862,9 +862,9 @@ set: 进化系列
 	64815084 # 进化的分歧点
 	74100225 # 进化的特异点
 	93504463 # 通向进化的吊桥
-deck: 进化 [0]
+deck: 진화 [0]
 	! [进化系列] ori >= 15
-deck: 进化帝 [1]
+deck: 에볼카이저 [1]
 	! [进化虫] main >= 3
 	! [进化龙] main >= 3
 	! [进化帝] ex >= 2
@@ -873,7 +873,7 @@ deck: 进化帝 [1]
 	#0x504e 进化帝	エヴォルカイザー
 
 #setname 0x4f 爆裂	バスター
-tag: 爆裂
+tag: 버스터
 	config: upgrade
 	config: global
 	! 80280737 main >= 2 # 爆裂模式
@@ -881,15 +881,15 @@ tag: 爆裂
 	#0x104f /爆裂体	／バスター
 
 #0x50 蛇毒	ヴェノム
-deck: 蛇毒 [1]
+deck: 베놈 [1]
 	! [蛇毒] main >= 6
 	#0x1050 凶饿毒|蛇毒	スターヴ・ヴェノム
 
 #0x51 零件	ガジェット
-deck: 齿轮 [1]
+deck: 가제트 [1]
 	! [ガジェット] main >= 9
 	refuse: 齿轮
-tag: 齿轮
+tag: 가제트
 	config: global
 	config: upgrade
 	! [ガジェット] main >= 5
@@ -897,53 +897,53 @@ tag: 齿轮
 #0x52 守护者	ガーディアン
 
 #0x53 星圣	セイクリッド
-deck: 星圣 [1]
+deck: 세이크리드 [1]
 	! [星圣] ori >= 9
 
 #0x54 我我我	ガガガ
-deck: 我我我 [1]
+deck: 가가가 [1]
 	! [我我我] ori >= 9
 	refuse: 拟声
 
 #0x55 光子	フォトン
-deck: 光子 [1]
+deck: 포톤 [1]
 	! [光子] main >= 7
 
 #0x56 甲虫装机	甲虫装機
-deck: 甲虫装机 [1]
+deck: 인잭터 [1]
 	! [甲虫装机] ori >= 8
 	refuse: 甲虫装机
-tag: 甲虫装机
+tag: 인잭터
 	config: global
 	! [甲虫装机] main >= 3
 
 #0x57 共鸣者	リゾネーター
-tag: 共鸣者
+tag: 레조네이터
 	config: global
 	! [共鸣者] main >= 3
 
 #0x58 发条	ゼンマイ
-deck: 发条 [1]
+deck: 태엽 [1]
 	! [发条] main >= 7
 
 #0x59 隆隆隆	ゴゴゴ
-deck: 隆隆隆 [1]
+deck: 고고고 [1]
 	! [隆隆隆] main >= 8
 	refuse: 隆隆隆
 	refuse: 拟声
-tag: 隆隆隆
+tag: 고고고
 	config: global
 	config: upgrade
 	! [隆隆隆] main >= 4
 
 #0x5a 企鹅	ペンギン
-deck: 企鹅 [1]
+deck: 펭귄 [1]
 	! [企鹅] main > 6
 
 #0x5b 番茄小子	トマボー
 
 #0x5c 斯芬克斯	スフィンクス
-deck: 斯芬克斯 [1]
+deck: 스핑크스 [1]
 	! [斯芬克斯] main >= 6
 	! 55737443 main >= 1 # 守护神 艾克佐德
 
@@ -953,7 +953,7 @@ deck: 斯芬克斯 [1]
 #setname 0x5f N/A
 
 #0x60 竹光
-tag: 竹光
+tag: 죽도
 	config: global
 	! [竹光] main >= 3
 	! 54631834 main < 1 # 终端世界
@@ -961,17 +961,17 @@ tag: 竹光
 #0x61 忍法
 
 #0x62 卡通	トゥーン
-deck: 卡通 [1]
+deck: 툰 [1]
 	! [卡通] main > 6
 
 #0x63 反应机	リアクター
-deck: 反应机 [1]
+deck: 리액터 [1]
 	! 89493368 main >= 1 # 召唤反应机·大式
 	! 52286175 main >= 1 # 陷阱反应机·空式
 	! 15175429 main >= 1 # 魔法反应机·袭式
 
 #0x64 鹰身	ハーピィ
-deck: 鹰身 [1]
+deck: 해피 [1]
 	! [鹰身] ori >= 9
 
 #0x65 侵略的	侵略の
@@ -979,17 +979,17 @@ deck: 鹰身 [1]
 #0x66 战士	ウォリアー
 
 #0x1066 音响战士	音響戦士
-deck: 音响战士 [1]
+deck: 음향전사 [1]
 	! [音响战士] main >= 8
 	! 音响放大器 main >= 1
 	refuse: 音响战士
-tag: 音响战士
+tag: 음향전사
 	config: global
 	config: upgrade
 	! [音响战士] main >= 5
 
 #0x2066 磁石战士	マグネット・ウォリアー
-deck: 磁石战士 [1]
+deck: 자석의전사 [1]
 	or:
 		! [マグネット・ウォリアー] main >= 6 # 目前只有磁石战士(マグネット・ウォリアー)下级具备此字段
 		! [磁石の戦士(じしゃくのせんし)] main >= 4 # 目前只有磁石战士((じしゃくのせんし))最上级具备此字段
@@ -998,41 +998,41 @@ deck: 磁石战士 [1]
 #setname 0x68 铁皮	ブリキ
 
 #0x69 圣刻	聖刻
-deck: 圣刻 [1]
+deck: 성각 [1]
 	! [圣刻] ori >= 12
 	refuse: 圣刻
-tag: 圣刻
+tag: 성각
 	config: global
 	config: upgrade
 	! [圣刻] ori >= 4
 
 #0x6a 幻蝶刺客	幻蝶の刺客
-deck: 幻蝶刺客 [1]
+deck: 환접의자객 [1]
 	! [幻蝶刺客] main >= 7
 
 #0x6b 保镖	バウンサー
 #0x6c 光芒使者	ライトレイ
 
 #0x6d 魔人	魔人（まじん）
-deck: 超量魔人 [1]
+deck: 엑시즈마인 [1]
 	! [魔人] ex >= 5
 
 #0x6e 魔导	魔導
-deck: 魔导 [1]
+deck: 마도 [1]
 	! [魔导] ori >= 15
 	! [魔导书] main >= 10
 	refuse: 魔导
-tag: 魔导
+tag: 마도
 	config: global
 	config: upgrade
 	! [魔导书] main >= 4
 	#0x106e 魔导书	魔導書
 
 #0x6f 英豪	ヒロイック
-deck: 英豪 [1]
+deck: 히로익 [1]
 	! [英豪] ori >= 10
 	refuse: 英豪
-tag: 英豪
+tag: 히로익
 	config: global
 	config: upgrade
 	! [英豪] main >= 4
@@ -1040,16 +1040,16 @@ tag: 英豪
 	#0x206f 英豪冠军	H－C
 
 #0x70 先史遗产	先史遺産
-deck: 先史遗产 [1]
+deck: 오파츠 [1]
 	! [先史遗产] ori >= 10
 	refuse: 先史遗产
-tag: 先史遗产
+tag: 오파츠
 	config: global
 	config: upgrade
 	! [先史遗产] ori >= 4
 
 #0x71 魔偶甜点	マドルチェ
-deck: 魔偶甜点 [1]
+deck: 마돌체 [1]
 	! [魔偶甜点] ori >= 8
 	refuse: 甜点
 	(法式甜点)
@@ -1060,10 +1060,10 @@ tag: 甜点
 	! [魔偶甜点] ori >= 4
 
 #0x72 齿轮齿轮	ギアギア
-deck: 齿轮齿轮 [1]
+deck: 기아기아 [1]
 	! [齿轮齿轮] ori > 10
 	refuse: 齿轮齿轮
-tag: 齿轮齿轮
+tag: 기아기아
 	! [齿轮齿轮] ori >= 4
 	#0x1072 齿轮齿轮人	ギアギアーノ
 
@@ -1071,13 +1071,13 @@ tag: 齿轮齿轮
 #0x1073 混沌超量	CX（カオスエクシーズ）
 
 #0x2073 超量龙	エクシーズ・ドラゴン
-tag: 超量龙
+tag: 엑시즈드래곤
 	config: global
 	config: upgrade
 	! [超量龙] ex >= 4
 
 #0x74 水精鱗
-tag: 水精鱗
+tag: 머메일
 	config: global
 	config: upgrade
 	! [水精鳞] ori >= 6
@@ -1085,23 +1085,23 @@ tag: 水精鱗
 #0x75 深渊	アビス
 
 #0x76 纹章兽	紋章獣
-deck: 纹章兽 [1]
+deck: 문장수 [1]
 	! [纹章兽] main >= 6
 
 #0x77 海皇
-tag: 海皇
+tag: 해황
 	config: global
 	config: upgrade
 	! [海皇] main >= 6 
 
 #0x78 迅捷	素早い
-tag: 迅捷
+tag: 재빠른
 	config: global
 	config: upgrade
 	! [迅捷] main >= 6
 
 #0x79 炎星
-deck: 炎星 [1]
+deck: 염성 [1]
 	! [炎星] ori >= 6
 	! [炎舞] ori >= 5
 	refuse: 炎舞
@@ -1115,20 +1115,20 @@ deck: 炎星 [1]
 #setname 0x7a 圣	聖
 
 #0x107a 圣骑士	聖騎士（せいきし）
-deck: 圣骑士 [1]
+deck: 성기사 [1]
 	! [圣骑士] ori >= 6
 	! [圣剑] main >= 4
 	#0x207a 圣剑	聖剣（せいけん）
 
 #0x7b 银河	ギャラクシー
-deck: 银河 [0]
+deck: 갤럭시 [0]
 	! 93717133 main >= 2 # 银河眼光子龙
 	refuse: 银河
 
-deck: 银河 [1]
+deck: 갤럭시 [1]
 	! [银河] main >= 8
 	refuse: 银河
-tag: 银河
+tag: 갤럭시
 	config: global
 	! [银河] main <= 9
 	! 46659709 main >= 2 # 银河战士
@@ -1136,20 +1136,20 @@ tag: 银河
 	#0x307b 银河眼时空龙	ギャラクシーアイズ・タキオン・ドラゴン
 
 #0x7c 炎舞
-tag: 炎舞
+tag: 염무
 	config: global
 	! [炎星] ori >= 1
 	! [炎舞] ori >= 3
 
 #0x7d 阳炎	ヘイズ
-deck: 阳炎 [1]
+deck: 헤이즈 [1]
 	! [阳炎] ori >= 8
 	#0x107d 阳炎兽	陽炎獣
 
 #setname 0x7e 异热同心	ゼアル
 #setname 0x107e 异热同心武器	ZW（ゼアル・ウェポン）
 #setname 0x207e 异热同心从者	ZS（ゼアル・サーバス）
-tag: 异热同心
+tag: 제알
 	config: global
 	config: upstream
 	! [异热同心] main >= 4
@@ -1158,7 +1158,7 @@ set: 霍普系列
 	inner set: 霍普
 	35906693 # 闪光抽卡
 #0x7f 霍普	ホープ
-deck: 霍普 [1]
+deck: 호프 [1]
 	or:
 		! [霍普] ex >= 7
 		and:
@@ -1169,38 +1169,38 @@ deck: 霍普 [1]
 	#0x107f 希望皇 霍普	希望皇ホープ
 
 #0x80 尘妖	ダストン
-deck: 尘妖 [1]
+deck: 더스튼 [1]
 	! [尘妖] main >= 8
 
 #0x81 炎王
-deck: 炎王 [1]
+deck: 염왕 [1]
 	! [炎王] main > 7
 	refuse: 炎王
-tag: 炎王
+tag: 염왕
 	config: global
 	! [炎王] >= 3
 	#0x1081 炎王兽	炎王獣
 
 #0x82 怒怒怒	ドドド
-deck: 怒怒怒 [1]
+deck: 도도도 [1]
 	! [怒怒怒] main >= 6
 	refuse: 拟声
 
 #0x83 机关傀儡	ギミック・パペット
-deck: 机关傀儡 [1]
+deck: 기믹퍼핏 [1]
 	! [机关傀儡] ori > 6
 
 #0x84 燃烧拳击手	BK（バーニングナックラー）
-deck: 燃烧拳击手 [1]
+deck: 버닝나쿠라 [1]
 	! [燃烧拳击手] ori > 8
 
 #0x85 超级防御机器人	SDロボ
-deck: 超级防卫机器人 [1]
+deck: SD로보 [1]
 	! [超级防卫机器人] main >= 4
 	! 77799846 ex >= 1 # 废品眼太鼓龙
 
 #0x86 光天使
-deck: 光天使 [1]
+deck: 홀리라이트닝 [1]
 	! [光天使] main > 8
 	refuse: 杖座
 tag: 杖座	
@@ -1209,16 +1209,16 @@ tag: 杖座
 	! 91110378 main >= 2 # 光天使 天座
 
 #0x87 阴影	アンブラル
-deck: 阴影 [1]
+deck: 엄브럴 [1]
 	! [阴影] main >= 8
 	refuse: 阴影
-tag: 阴影
+tag: 엄브럴
 	config: global
 	config: upgrade
 	! [阴影] main >= 4
 
 #0x88 武神
-deck: 武神 [1]
+deck: 무사신 [1]
 	! [武神] ori > 10
 	(花园)
 		! 71645242 main >= 1 # 黑色花园
@@ -1226,38 +1226,38 @@ deck: 武神 [1]
 #0x89 洞	ホール
 
 #setname 0x8a 虫惑	蟲惑
-deck: 虫惑魔 [1]
+deck: 충혹마 [1]
 	! [虫惑魔] ori > 7
 	refuse: 虫惑魔
-tag: 虫惑魔
+tag: 충혹마
 	config: global
 	config: upgrade
 	! [虫惑魔] ori >= 4
 	#0x108a 虫惑魔	蟲惑魔
 
 #0x8b 恶餐	マリスボラス
-deck: 食恶 [1]
+deck: 마리스보라스 [1]
 	! [食恶] main >= 6
 	refuse: 食恶
-tag: 食恶
+tag: 마리스보라스
 	config: global
 	! [食恶] main >= 3
 
 #setname 0x8c 德鲁伊	ドルイド
 
 #0x8d 鬼计	ゴーストリック
-deck: 鬼计 [1]
+deck: 고스트릭 [1]
 	! [鬼计] ori > 10
 
 #0x8e 吸血鬼	ヴァンパイア
-deck: 吸血鬼 [1]
+deck: 뱀파이어 [1]
 	! [吸血鬼] ori >= 8
 	refuse: 不死族
 
 #0x8f 刷啦啦	ズババ
 
 #0x90 森罗	森羅
-deck: 森罗 [1]
+deck: 삼라 [1]
 	! [森罗] ori > 10
 	refuse: 植物族
 
@@ -1273,29 +1273,29 @@ set: 电子龙系列
 	91989718 # 攻击反射装置
 	4162088  # 电子镭射龙
 	68774379 # 电子障壁龙
-tag: 电子龙 [1]
+tag: 사이버드래곤 [1]
 	config: global
 	config: upgrade
 	! [电子龙系列] main >= 6
-deck: 电子龙 [1]
+deck: 사이버드래곤 [1]
 	! [电子龙系列] ori >= 12
 	refuse: 电子龙
 
 #0x2093 电子化天使	サイバー・エンジェル
-deck: 电子化 [1]
+deck: 사이버엔젤 [1]
 	! [电子化] main >= 6
 set: 电子化天使系列
 	inner set: 电子化天使
 	inner set: 机械天使
-deck: 电子化天使 [2]
+deck: 사이버엔젤 [2]
 	! [电子化天使系列] main >= 6
 	refuse: 电子化天使
-tag: 电子化天使
+tag: 사이버엔젤
 	config: global
 	config: upgrade
 	! [电子化天使系列] main >= 2
 #0x4093 电子暗黑	サイバー・ダーク/サイバーダーク
-tag: 暗电子
+tag: 사이버다크
 	config: global
 	config: upgrade
 	or:
@@ -1307,11 +1307,11 @@ tag: 暗电子
 #0x94 电子科技	サイバネティック
 #0x95 升阶魔法	RUM
 #0x96 电子鱼人	フィッシュボーグ
-deck: 电子鱼人 [1]
+deck: 사이버鱼人 [1]
 	! [电子鱼人] main >= 7
 
 #0x97 古遗物	アーティファクト
-deck: 古遗物 [1]
+deck: 아티팩트 [1]
 	! [古遗物] ori >= 10
 	refuse: AF
 	refuse: 古遗物
@@ -1319,13 +1319,13 @@ tag: AF
 	config: global
 	! [古遗物] main >= 4
 	! [古遗物] main < 7
-tag: 古遗物
+tag: 아티팩트
 	config: global
 	config: upgrade
 	! [古遗物] main >= 7
 
 #0x98 魔术师	魔術師
-deck: 魔术师 [1]
+deck: 마술사 [1]
 	! [魔术师] main >= 9
 	! [灵摆读阵] main >= 2
 	#! 47349116 ex >= 1 # 星刻之魔术师
@@ -1335,61 +1335,61 @@ deck: 魔术师 [1]
 		! 94415058 main >= 1 # 星读之魔术师
 		! 12289247 main >= 2 # 刻读之魔术师
 		! 20409757 main >= 1 # 时读之魔术师
-tag: 魔术师
+tag: 마술사
 	config: global
 	config: upgrade
 	! [魔术师] main >= 6
 
 #0x99 异色眼	オッドアイズ
-deck: 异色眼 [1]
+deck: 오드아이즈 [1]
 	! [异色眼] ori >= 15
 	refuse: 异色眼
-tag: 异色眼
+tag: 오드아이즈
 	config: global
 	config: upgrade
 	! [异色眼] main >= 5
 
 #0x9a 超重武者
-deck: 超重武者 [1]
+deck: 초중무사 [1]
 	! [超重武者] ori > 10
 	#0x109a 超重武者装留
 
 #0x9b 幻奏
-deck: 幻奏 [1]
+deck: 환주 [1]
 	! [幻奏] main >= 6
 	! [幻奏] ori > 8
 	refuse: 幻奏
-tag: 幻奏
+tag: 환주
 	config: global
 	config: upgrade
 	! [幻奏] ori > 5
 	#0x109b 幻奏的音姬	幻奏の音姫
 
 #0x9c 星守	テラナイト
-deck: 星守 [1]
+deck: 테라나이트 [1]
 	! [星守] main > 6
 	! [星守] ex >= 2
 	refuse: 星守
-tag: 星守
+tag: 테라나이트
 	config: global
 	config: upgrade
 	! [星守] main >= 4
 	#0x109c 星辉士|星守	ステラナイト
 
 #0x9d 影依	シャドール
-deck: 影依 [1]
+deck: 섀도르 [1]
 	! [影依] ori > 10
 	refuse: 影依
-tag: 影依
+tag: 섀도르
 	config: global
 	! [影依] ori > 4
 
 #0x9e 龙星	竜星
-deck: 龙星 [1]
+deck: 룡성 [1]
 	! [龙星] ori >= 10
 	refuse: 龙星
 	refuse: 源龙星
-tag: 龙星
+tag: 룡성
 	config: global
 	! [龙星] main >= 4
 	! [龙星] ori < 7
@@ -1397,7 +1397,7 @@ tag: 龙星
 		! 44335251 main >= 2 # 食魂窃蛋龙
 		! 41386308 main >= 2 # 数学家
 		! 46796664 main >= 2 # DD 魔导贤者 哥白尼
-tag: 龙星
+tag: 룡성
 	config: global
 	config: upgrade
 	! [龙星] ori >= 7
@@ -1407,7 +1407,7 @@ tag: 龙星
 		! 46796664 main >= 2 # DD 魔导贤者 哥白尼
 
 #0x9f 娱乐伙伴	EM（エンタメイト）
-deck: 娱乐伙伴 [1]
+deck: EM [1]
 	! [娱乐伙伴] ori >= 9
 	refuse: EM
 tag: EM
@@ -1415,21 +1415,21 @@ tag: EM
 	! [娱乐伙伴] ori >= 5
 
 #0xa0 传说的骑士	伝説の騎士
-deck: 传说的骑士 [1]
+deck: 전설의기사 [1]
 	! 80019195 main >= 1
 	! 84565800 main >= 1
 	! 85800949 main >= 1
 	! 53315891 ex >= 1 # 合神龙
 
 #0xa1 传说之龙	伝説の竜
-tag: 传说之龙
+tag: 전설의용
 	config: global
 	! [传说之龙] main >= 2
 	restrains: <= 1
 		! 1784686 main >= 1 # 蒂迈欧之眼
 		! 11082056 main >= 1 # 克里底亚之牙
 		! 46232525 main >= 1 # 赫谟之爪
-tag: 传说之龙
+tag: 전설의용
 	config: global
 	config: upgrade
 	restrains: >= 2
@@ -1463,19 +1463,19 @@ set: 黑魔术师系列
 	48680970 # 永远之魂
 	86509711 # 魔术师的配合
 	23020408 # 魂之仆人
-deck: 黑魔导 [0]
+deck: 드라군 [0]
 	! 黑魔术师 main >= 1
 	! 37818794 ex < 1
-deck: 黑魔术师 [1]
+deck: 블랙매지션 [1]
 	! [黑魔术师系列] main >= 15
-deck: 师匠beat [2]
+deck: 블랙매지션비트 [2]
 	! 黑魔术师 main >= 2
 	! 7084129 main >= 2 # 魔术师之杖
 	! 47222536 main >= 2 # 黑魔导阵
 	! 48680970 main >= 1 # 永远之魂
 	! 7922915 main >= 1 # 魔术师的导门阵
 #0x20a2 魔术少女	マジシャン・ガール
-deck: 魔术少女 [1]
+deck: 매지션걸 [1]
 	! [魔术少女] main >= 5
 	#0x30a2 黑魔术少女	ブラック・マジシャン・ガール
 
@@ -1490,13 +1490,13 @@ set: 星尘一家
 	35952884 # 流天类星龙
 	7841112  # 救世星龙
 	21123811 # 宇宙耀变龙
-tag: 星尘
+tag: 스타더스트
 	config: global
 	config: upgrade
 	! [星尘一家] ex >= 7
 
 #0xa4 栗子球	クリボー
-deck: 栗子球 [1]
+deck: 크리보 [1]
 	or:
 		and:
 			! [栗子球] main >= 5
@@ -1513,33 +1513,33 @@ deck: 栗子球 [1]
 #0xa8 兰斯洛特	ランスロット
 
 #0xa9 毛绒动物	ファーニマル
-tag: 毛绒
+tag: 퍼니멀
 	config: global
 	config: upgrade
 	! [毛绒动物] main > 4
 
 #0xaa 机壳	クリフォート
-deck: 机壳 [1]
+deck: 클리포트 [1]
 	! [机壳] main > 7
 	(物质主义)
 		! 27279764 main >= 1
 	refuse: 机壳
-tag: 机壳
+tag: 클리포트
 	config: global
 	config: upgrade
 	! [机壳] main >= 3
 	#0x10aa 隐藏的机壳	アポクリフォート
 
 #0xab 文具电子人	ブンボーグ
-deck: 文具电子人 [1]
+deck: 文具사이버人 [1]
 	! [文具电子人] ori >= 10
 	refuse: 文具电子人
-tag: 文具电子人
+tag: 文具사이버人
 	config: global
 	! [文具电子人] main >= 4
 
 #0xac 哥布林	ゴブリン
-deck: 哥布林 [1]
+deck: 고블린 [1]
 	or:
 		! [哥布林] ori >= 15
 		and:
@@ -1547,7 +1547,7 @@ deck: 哥布林 [1]
 			! 12152769 main >= 1 # 强求哥布林
 
 #0xad 魔玩具	デストーイ
-deck: 魔玩具 [1]
+deck: 데스완구 [1]
 	! [毛绒动物] main >= 10
 	! [魔玩具] ex >= 6
 	refuse: 毛绒
@@ -1564,7 +1564,7 @@ deck: DD [1]
 #0xb0 加特姆士	ガトムズ
 
 #0xb1 彼岸
-deck: 彼岸 [1]
+deck: 피안 [1]
 	! [彼岸] ori >= 10
 	refuse: BA
 	refuse: 三阶
@@ -1573,25 +1573,25 @@ tag: BA
 	! [彼岸] main >= 3
 
 #0xb2 超级运动员	U.A.
-deck: 超级运动员 [1]
+deck: U.A. [1]
 	! [超级运动员] main >= 10
 
 #0xb3 妖仙兽	妖仙獣
-deck: 妖仙兽 [1]
+deck: 요선수 [1]
 	! [妖仙兽] main >= 6
 
 #0xb4 影灵衣	影霊衣
-deck: 影灵衣 [5]
+deck: 네크로즈 [5]
 	! [影灵衣] main >= 10
 	refuse: 影灵衣
 	refuse: 同调系
-tag: 影灵衣
+tag: 네크로즈
 	config: global
 	config: upgrade
 	! [影灵衣] main >= 4
 
 #0xb5 灵兽	霊獣
-deck: 灵兽 [1]
+deck: 령수 [1]
 	or:
 		! [灵兽] ori >= 18
 		and:
@@ -1617,9 +1617,9 @@ tag: 克苏鲁
 #0xb9 烈焰加农炮	ブレイズ・キャノン
 
 #0xba 急袭猛禽	RR（レイド・ラプターズ）
-deck: 急袭猛禽 [1]
+deck: RR [1]
 	! [急袭猛禽] ori > 10
-tag: 残存
+tag: RR
 	config: global
 	config: upgrade
 	! 97219708 main >= 2 # 急袭猛禽-残存林鸮
@@ -1628,10 +1628,10 @@ tag: 残存
 set: 狱火机系列
 	inner set: 狱火机
 	inner set: 炼狱
-deck: 狱火机 [1]
+deck: 인페르노이드 [1]
 	! [狱火机系列] ori > 12
 	refuse: 狱火机
-tag: 狱火机
+tag: 인페르노이드
 	config: global
 	! [狱火机系列] main >= 6
 
@@ -1644,7 +1644,7 @@ set: 人造人系列
 	64659851 # 宇宙的法则
 	91654806 # 与宇宙的交信
 	37042505 # 不朽的特殊合金
-deck: 人造人 [1]
+deck: 인조인간 [1]
 	! [人造人系列] main >= 9
 
 #0xbd 暗黑骑士 盖亚	暗黒騎士ガイア
@@ -1659,7 +1659,7 @@ set: 盖亚系列
 	38590361 # 螺旋融合
 	56461575 # 螺旋苏生
 	29477860 # 螺旋炮击
-deck: 盖亚 [1]
+deck: 가이아 [1]
 	or:
 		! [盖亚系列] ori >= 9
 		and:
@@ -1690,7 +1690,7 @@ set: 报社魔人
 	47084486 # 虚无魔人
 	33746252 # 威光魔人
 	72634965 # 虚无之统括者
-deck: 帝	[1]
+deck: 제왕	[1]
 	! [怪兽帝] main >= 3
 	(虚无魔人)
 		! 47084486 main >= 1
@@ -1700,18 +1700,18 @@ deck: 帝	[1]
 		! 84171830 main >= 1
 	(家臣)
 		! [家臣] main >= 5
-deck: 魔人Beat [1]
+deck: 마인비트 [1]
 	! [报社魔人] main >= 3
 	! [怪兽帝] main < 3
 
 #0xbf 灵使	霊使い
-tag: 灵使
+tag: 령사
 	config: global
 	config: upgrade
 	! [灵使] main >= 1
 
 #0xc0 凭依装着	憑依装着
-tag: 凭依装着
+tag: 빙의장착
 	config: global
 	config: upgrade
 	! [凭依装着] main >= 3
@@ -1722,7 +1722,7 @@ set: 灵使系列
 	91530236 # 精灵术的能手
 	38057522 # 大灵术-「一轮」
 
-deck: 灵使
+deck: 령사
 	or:
 		! [灵使系列] main >= 9
 		and:
@@ -1733,7 +1733,7 @@ deck: 灵使
 
 #0xc1 PSY骨架	PSYフレーム
 #0x10c1 PSY骨架装备	PSYフレームギア
-deck: PSY骨架 [1]
+deck: PSY프레임 [1]
 	or:
 		! [PSY骨架] main >= 13
 		and:
@@ -1749,30 +1749,30 @@ tag: PSY
 #0xc3 锋利小鬼	エッジインプ
 
 #0xc4 神数	セフィラ
-deck: 神数 [1]
+deck: 세피라 [1]
 	! [神数] main >= 9
 	refuse: 神数
-tag: 神数
+tag: 세피라
 	config: global
 	! [神数] main >= 3
 
 #0xc5 炼狱	煉獄
 
 #0xc6 娱乐法师	Em（エンタメイジ）
-deck: 娱乐法师 [1]
+deck: Em [1]
 	! [娱乐法师] main >= 8
 tag: Em
 	config: global
 	! [娱乐法师] main >= 4
 
 #0xc7 龙剑士	竜剣士
-tag: 龙剑士
+tag: 룡검사
 	config: global
 	config: upgrade	
 	! [龙剑士] main >= 3
 
 #0xc8 点火骑士	イグナイト
-deck: 点火骑士 [1]
+deck: 이그나이트 [1]
 	! [点火骑士] main > 10
 
 #0xc9 芳香	アロマ
@@ -1780,14 +1780,14 @@ set: 芳香系列
 	inner set: 芳香
 	92266279 # 湿润之风
 	28265983 # 干渴之风
-deck: 芳香 [1]
+deck: 아로마 [1]
 	! [芳香系列] main >= 8
 
 #0xca 魔装战士	魔装戦士
-deck: 魔装战士 [1]
+deck: 마장전사 [1]
 	! [魔装战士] main >= 8
 	refuse: 魔装战士
-tag: 魔装战士
+tag: 마장전사
 	config: global
 	! [魔装战士] main >= 2
 	! 54250060 main >= 1 # 召魔装着
@@ -1795,17 +1795,17 @@ tag: 魔装战士
 #0xcb 以太神兵龙	イーサルウェポン
 
 #0xcc 占术姬	占術姫
-deck: 占术姬 [1]
+deck: 점술공주 [1]
 	! [占术姬] main >= 6
 	refuse: 圣占术姬
-tag: 圣占术姬
+tag: 圣점술공주
 	config: global
 	config: upgrade
 	! 94997874 main >= 1 # 圣占术姬 塔罗光巫女
 
 #0xcd 水伶女	アクアアクトレス
 #0xce 水族馆	アクアリウム
-deck: 水族馆 [1]
+deck: 아쿠아리움 [1]
 	! [水伶女] main >= 6
 	! [水族馆] main >= 3
 
@@ -1815,7 +1815,7 @@ set: 混沌战士的仪式
 	45948430 # 超战士的萌芽
 	14094090 # 超战士的仪式
 	55761792 # 混沌的仪式
-deck: 混沌战士(仪式) [2]
+deck: 의식카오스솔저 [2]
 	! [混沌战士的仪式] main >= 2
 	! [混沌战士] main >= 1
 	or:
@@ -1824,34 +1824,34 @@ deck: 混沌战士(仪式) [2]
 			! 6628343 main >= 1
 			! 32013448 main >= 1
 	refuse: 混沌战士
-deck: 混沌战士(非仪式) [1]
+deck: 가이아카오스솔저 [1]
 	! [混沌战士] main >= 2
 	! [暗黑骑士 盖亚] main >= 2
 	refuse: 混沌战士
-tag: 混沌战士
+tag: 카오스솔저
 	config: global
 	! [混沌战士的仪式] main >= 1
 	! [混沌战士] main >= 1
 
 #0xd0 威风妖怪	マジェスペクター
-deck: 威风妖怪 [1]
+deck: 마제스펙터 [1]
 	! [威风妖怪] main >= 10
 	refuse: 威风妖怪
-tag: 威风妖怪
+tag: 마제스펙터
 	config: global
 	! [威风妖怪] main >= 4
 
 #0xd1 灰篮	グレイドル
-deck: 灰篮 [1]
+deck: 그레이돌 [1]
 	! [灰篮] ori >= 8
 	refuse: 灰篮
-tag: 灰篮
+tag: 그레이돌
 	config: global
 	config: upgrade
 	! [灰篮] >= 3
 
 #0xd2 星际仙踪	Kozmo
-deck: 星际仙踪 [1]
+deck: Kozmo [1]
 	! [星际仙踪] main >= 10
 	refuse: Kozmo
 tag: Kozmo
@@ -1859,24 +1859,24 @@ tag: Kozmo
 	! [星际仙踪] main >= 3
 
 #0xd3 坏兽	壊獣
-deck: 坏兽 [1]
+deck: 파괴수 [1]
 	or:
 		and:
 			! [坏兽] main >= 6
 			! 56111151 main >= 1
 		! [坏兽] main >= 15
 	refuse: 坏兽
-tag: 坏兽
+tag: 파괴수
 	config: global
 	config: upgrade
 	! [坏兽] main >= 4
 	! 99330325 main >= 1 # 遭受妨碍的坏兽安眠
 
 #0xd4 伯吉斯异兽	バージェストマ
-deck: 伯吉斯异兽 [1]
+deck: 버제스토마 [1]
 	! [伯吉斯异兽] ori > 10
 	refuse: 伯吉斯异兽
-tag: 伯吉斯异兽
+tag: 버제스토마
 	config: global
 	! [伯吉斯异兽] ori > 3
 
@@ -1887,32 +1887,32 @@ tag: 伯吉斯异兽
 set: 破坏剑系列
 	inner set: 破坏剑
 	inner set: 破坏之剑士
-deck: 破坏剑 [1]
+deck: 파괴검 [1]
 	! [破坏剑系列] ori >= 6
 	! 11790356 ex >= 1 # 破戒蛮龙-破坏龙
 	refuse: 破坏剑
 	(灵堂)
 		! 24382602 main >= 1 # 光之灵堂
-tag: 破坏剑
+tag: 파괴검
 	config: global
 	config: upgrade
 	! [破坏剑] main >= 3
 
 #0xd8 雾动机龙	ダイナミスト
-deck: 雾动机龙 [1]
+deck: 다이너미스트 [1]
 	! [雾动机龙] main > 10
 	refuse: 雾动机龙
-tag: 雾动机龙
+tag: 다이너미스트
 	config: global
 	! [雾动机龙] main >= 3
 
 #0xd9 不知火
-deck: 不知火 [1]
+deck: 시라누이 [1]
 	! [不知火] ori >= 9
 	refuse: 不死族
 	refuse: 不知火
 	refuse: 同调系
-tag: 不知火
+tag: 시라누이
 	config: global
 	config: upgrade
 	! 94801854 main >= 1 # 不知火的隐者
@@ -1922,20 +1922,20 @@ tag: 不知火
 
 #0xdb 幻影	ファントム
 #0x10db 幻影骑士团	幻影騎士団
-tag: 幻影骑士团
+tag: 팬텀나이츠
 	config: global
 	config: upgrade
 	! [幻影骑士团] main >= 6
-deck: 幻影骑士团 [1]
+deck: 팬텀나이츠 [1]
 	! [幻影骑士团] ori >= 12
 	refuse: 幻影骑士团
 
 #0xdc 超级量子	超量
-deck: 超量士 [1]
+deck: 초량 [1]
 	! [超级量子] ori >= 12
 	! [超级量子机兽] ex >= 3
 	refuse: 超量士
-tag: 超量士
+tag: 초량
 	config: global
 	config: upgrade
 	! 59975920 main >= 2 # 超级量子战士 红光层
@@ -1944,7 +1944,7 @@ tag: 超量士
 	#0x20dc 超级量子机兽	超量機獣
 
 #0xdd 青眼	ブルーアイズ
-deck: 青眼 [1]
+deck: 푸른눈 [1]
 	or:
 		! [青眼] main >= 6
 		and:
@@ -1956,7 +1956,7 @@ deck: 青眼 [1]
 			! 2129638  ex >= 1 # 青眼双爆裂龙
 			! 56532353 ex >= 1 # 真青眼究极龙
 			! 23995346 ex >= 1 # 青眼究极龙
-tag: 白龙
+tag: 백룡
 	config: global
 	config: upgrade
 	! 55410871 main <= 1 # 青眼混沌极龙
@@ -1970,25 +1970,25 @@ tag: 白龙
 set: 月光系列
 	inner set: 月光
 	48444114 # 月光香
-tag: 月光
+tag: 문라이트
 	config: global
 	config: upgrade
 	! [月光系列] main >= 2
-deck: 月光 [1]
+deck: 문라이트 [1]
 	! [月光系列] ori > 10
 	refuse: 月光
 	(花园)
 		! 71645242 main >= 1 # 黑色花园
 
 #0xe0 无形噬体	アモルファージ
-deck: 无形噬体 [1]
+deck: 아모르파지 [1]
 	! [无形噬体] main >= 10
 	refuse: 无形噬体
-tag: 无形噬体
+tag: 아모르파지
 	! [无形噬体] main >= 1
 
 #0xe1 炼装	メタルフォーゼ
-deck: 炼装 [1]
+deck: 메탈포제 [1]
 	! [炼装] main >= 12
 	refuse: 炼装
 	(胧影)
@@ -1998,20 +1998,20 @@ deck: 炼装 [1]
 		! 94415058 main < 1 # 星读之魔术师
 	(解放天使)
 		! 98301564 main >= 1	
-tag: 炼装
+tag: 메탈포제
 	config: global
 	config: upgrade
 	! [炼装] main >= 4
 
 #0xe2 三形金字塔	トラミッド
-deck: 三形金字塔 [1]
+deck: 트라미드 [1]
 	! [三形金字塔] main > 10
 
 #0xe3 方界
-deck: 方界 [1]
+deck: 방계 [1]
 	! [方界] ori >= 9
 	refuse: 方界
-deck: 方界神 [2]
+deck: 방계神 [2]
 	! 30270176 main >= 3 # 暗黑方界神 深红之挪婆
 	! 72664875 >= 1 # 暗黑方界邪神 深红之挪婆·三神一体
 	refuse: 方界
@@ -2022,41 +2022,41 @@ deck: 方界神 [2]
 			! 79109599 main >= 1 # 沼地的魔神王
 			! 89312388 main >= 1 # 元素英雄 棱镜侠
 		! [方界] ori <= 6
-tag: 方界
+tag: 방계
 	config: global
 	! [方界] ori >= 6
 
 #0xe4 精灵剑士	エルフの剣士
-tag: 精灵剑士
+tag: 엘프검사
 	config: global
 	config: upgrade
 	! [精灵剑士] main >= 4
 
 #0xe5 光波	サイファー
 #0x10e5 光波龙	サイファー・ドラゴン
-tag: 光波
+tag: 사이퍼
 	config: global
 	config: upgrade
 	! [光波] main >= 3
 
 #0xe6 花札卫	花札衛
-deck: 花札卫 [1]
+deck: 카디언 [1]
 	! [花札卫] main > 12
 
 #0xe7 沉默剑士	サイレント・ソードマン
-deck: 沉默剑士 [1]
+deck: 사일런트스워드맨 [1]
 	! [沉默剑士] main > 5
 	refuse: 沉默剑士
-tag: 沉默剑士
+tag: 사일런트스워드맨
 	config: global
 	config: upgrade
 	! 15180041 main >= 1 # 沉默剑士(沈黙の剣士－サイレント・ソードマン)
 
 #0xe8 沉默魔术师	サイレント・マジシャン
-deck: 沉默魔术师 [1]
+deck: 사일런트매지션 [1]
 	! [沉默魔术师] main > 5
 	refuse: 沉默剑士
-tag: 沉默魔术师
+tag: 사일런트매지션
 	config: global
 	config: upgrade
 	! 41175645 main >= 1 # 沉默魔术师(沈黙の魔術師－サイレント・マジシャン)
@@ -2064,21 +2064,21 @@ tag: 沉默魔术师
 #0xe9 磁石战士	磁石の戦士(じしゃくのせんし)
 
 #0xea 水晶机巧|非「机巧」	クリストロン
-deck: 水晶机巧 [1]
+deck: 水晶자동기계 [1]
 	! [水晶机巧|非「机巧」] main > 10
 	refuse: 水晶机巧
 	refuse: 同调系
-tag: 水晶机巧
+tag: 水晶자동기계
 	config: global
 	config: upgrade
 	! [水晶机巧|非「机巧」] main > 3
 
 #0xeb 化合兽	化合獣
-deck: 化合兽 [1]
+deck: 화합야수 [1]
 	! [化合兽] ori > 10
 	refuse: 二重
 	refuse: 化合兽
-tag: 化合兽
+tag: 화합야수
 	config: global
 	config: upgrade
 	! [化合兽] main >= 3
@@ -2091,11 +2091,11 @@ set: 魔界剧团系列
 	inner set: 魔界台本
 	86578200 # 魔界大道具
 	77297908 # 魔界剧场
-deck: 魔界剧团 [1]
+deck: 마계극단 [1]
 	! [魔界剧团系列] main >= 9
 
 #0xed 地中族	サブテラー
-deck: 地中族 [1]
+deck: 서브테러 [1]
 	or:
 		and:
 			! [地中族] ori >= 4
@@ -2104,29 +2104,29 @@ deck: 地中族 [1]
 	#0x10ed 地中族邪界	サブテラーマリス
 
 #0xee 秘旋谍	SPYRAL
-deck: 秘旋谍 [1]
+deck: SPYRAL [1]
 	! [秘旋谍] ori >= 7
 	#0x10ee 秘旋谍装备	SPYRAL GEAR
 	#0x20ee 秘旋谍任务	SPYRAL MISSION
 
 #0xef 堕天使
-deck: 堕天使 [1]
+deck: 타락천사 [1]
 	! [堕天使] main >= 9
 	refuse: 天使族
 	(虚无)
 		! 47084486 main >= 2 # 虚无魔人
 
 #0xf0 风魔女	WW（ウィンド・ウィッチ）
-tag: 风魔女
+tag: WW
 	config: global
 	config: upgrade
 	! [风魔女] main >= 4
 
 #0xf1 十二兽	十二獣
-deck: 十二兽 [1]
+deck: 십이수 [1]
 	! [十二兽] main >= 6
 	refuse: 十二兽
-tag: 十二兽
+tag: 십이수
 	config: global
 	config: upgrade
 	! [十二兽] main > 2
@@ -2136,7 +2136,7 @@ tag: 十二兽
 #0x20f2 灵摆读阵	ペンデュラムグラフ
 
 #0xf3 捕食	プレデター
-deck: 捕食植物 [1]
+deck: 프레데터플랜츠 [1]
 	! [捕食] ori >= 8
 	refuse: 捕食
 	refuse: 奇美拉大花草
@@ -2148,14 +2148,14 @@ tag: 奇美拉大花草
 
 
 #0xf4 召唤兽	召喚獣
-tag: 召唤兽
+tag: 소환수
 	config: global
 	config: upgrade	
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
 	! 74063034 main >= 1 # 召唤魔术
 
 #0xf5 甘多拉	ガンドラ
-tag: 甘多拉
+tag: 간드라
 	config: global
 	config: upgrade
 	! [甘多拉] main >= 2
@@ -2163,7 +2163,7 @@ tag: 甘多拉
 #0xf6 摩天楼
 
 #0xf7 抒情歌鸲	LL（リリカル・ルスキニア）
-deck: 抒情歌鸲 [2]
+deck: LL [2]
 	! [抒情歌鸲] ori >= 9
 tag: 夜莺Burn
 	config: global
@@ -2180,18 +2180,18 @@ tag: 夜莺Burn
 
 #0xf8 霸王	覇王
 #0x10f8 霸王门	覇王門
-tag: 霸王门
+tag: 패왕문
 	config: global
 	! [霸王门] main >= 2
 	! [霸王门] main <= 4
-tag: 霸王门
+tag: 패왕문
 	config: global
 	config: upgrade
 	! [霸王门] main >= 5
 	#0x20f8 霸王眷龙	覇王眷竜
 
 #0xf9 真龙	真竜
-deck: 真龙 [1]
+deck: 진룡 [1]
 	! [真龙] main > 12
 	(真龙皇)
 		! [真龙皇] main >= 8
@@ -2199,7 +2199,7 @@ deck: 真龙 [1]
 	#	! 21377582 main >= 1 # 真龙剑皇 卓辉星·拼图
 	refuse: 真龙皇
 	#refuse: 真龙剑皇
-tag: 真龙皇
+tag: 진룡皇
 	config: global
 	config: upgrade
 	! [真龙] main <= 12
@@ -2216,34 +2216,34 @@ tag: 真龙皇
 set: 幻煌系列
 	inner set: 幻煌龙
 	22702055 # 海/幻煌之都
-deck: 幻煌龙 [1]
+deck: 환황룡 [1]
 	! 56649609 main >= 1 # 幻煌龙 螺旋
 	or: 
 		! 2819435 main >= 2 # 幻煌之都 帕西菲斯
 		! 22702055 main >= 2 # 海
 	! [幻煌龙] main >= 5
 	refuse: 幻煌
-tag: 幻煌
+tag: 환황
 	config: global
 	config: upgrade
 	! [幻煌系列] main >= 4
 
 #0xfb 淘气仙星	トリックスター
-deck: 淘气仙星 [1]
+deck: 트릭스터 [1]
 	! 61283655 main >= 1 # 淘气仙星·坎迪娜
 	! 35199656 main >= 1 # 淘气仙星·曼珠诗华
 	! [淘气仙星] ori >= 7
 	refuse: 淘气仙星
-tag: 淘气仙星
+tag: 트릭스터
 	config: global
 	config: upgrade
 	! [淘气仙星] main > 2
 
 #0xfc 刚鬼	剛鬼
-deck: 刚鬼 [1]
+deck: 강귀 [1]
 	! [刚鬼] ori >= 4
 	refuse: 刚鬼
-tag: 刚鬼
+tag: 강귀
 	config: global
 	config: upgrade
 	! [刚鬼] main > 2
@@ -2253,21 +2253,21 @@ set: 星杯系列
 	inner set: 星杯
 	97648103 # 星遗物的加护
 	61654098 # 与星遗物的邂逅
-deck: 星杯 [1]
+deck: 성잔 [1]
 	! [星杯] ori >= 9
 	refuse: 星杯
-tag: 星杯
+tag: 성잔
 	config: global
 	config: upgrade
 	! [星杯] main > 2
 
 #0xfe 星遗物	星遺物
 
-deck: 星遗物 [0]
+deck: 성유물 [0]
 	! [星遗物] main >= 5
 	! [星遗物] main < 12
 
-deck: 星遗物 [2]
+deck: 성유물 [2]
 	! [星遗物] main >= 12
 
 #0xff 幻透翼	クリアウィング
@@ -2295,10 +2295,10 @@ set: 弹丸系列
 	73539069 # 主动撞针龙
 	30131474 # 枪管供给点
 	93612434 # 双持手枪龙
-tag: 弹丸
+tag: 바렛
 	config: global
 	! [弹丸系列] main >= 3
-deck: 弹丸 [1]
+deck: 바렛 [1]
 	! [弹丸系列] ori >= 12
 	refuse: 弹丸
 #deck: 弹丸守护龙 [10]
@@ -2312,10 +2312,10 @@ deck: 弹丸 [1]
 set: 幻变骚灵系列
 	inner set: 幻变骚灵
 	53936268 # 个人欺骗攻击
-deck: 幻变骚灵 [1]
+deck: 얼터가이스트 [1]
 	! [幻变骚灵系列] main >= 8
 	refuse: 幻变骚灵
-tag: 幻变骚灵
+tag: 얼터가이스트
 	config: global
 	config: upgrade
 	! [幻变骚灵系列] main >= 4
@@ -2327,39 +2327,39 @@ set: 机怪虫系列
 	89320376 # 星遗物的傀儡
 	31706048 # 星遗物的醒存
 	27705190 # 星遗物的交心
-deck: 机怪虫 [1]
+deck: 크롤러 [1]
 	! [机怪虫系列] ori >= 12
 	refuse: 机怪虫
-tag: 机怪虫
+tag: 크롤러
 	config: global
 	! [机怪虫系列] ori >= 7
 
 #0x105 玄化	メタファイズ
-deck: 玄化 [1]
+deck: 메타파이즈 [1]
 	! [玄化] main >= 8
 	(执行神)
 		! 45148985 main >= 1 # 玄化执行神
 
 #0x106 复仇死者	ヴェンデット
-deck: 复仇死者 [1]
+deck: 벤데드 [1]
 	! [复仇死者] ori >= 10
 	refuse: 复仇死者
 	refuse: 不死族
-tag: 复仇死者
+tag: 벤데드
 	config: global
 	config: upgrade
 	! [复仇死者] main >= 5
 
 #0x107 方程式运动员	F.A.
-deck: 方程式运动员 [1]
+deck: F.A. [1]
 	! [方程式运动员] ori >= 7
 
 #0x108 魔弹	魔弾
-deck: 魔弹 [1]
+deck: 마탄환 [1]
 	! [魔弹] ori >= 12
 
 #0x109 天气	天気
-deck: 天气 [1]
+deck: 천후 [1]
 	! [天气] ori >= 9
 
 #0x10a 珀耳修斯	パーシアス
@@ -2370,7 +2370,7 @@ set: 廷达魔三角系列
 	63053267 # 奈格尔守护天
 	9547962  # 欧拉回路
 	59490397 # 热尔岗终焉
-deck: 廷达魔三角 [1]
+deck: 틴당글 [1]
 	! [廷达魔三角系列] ori >= 9
 
 #0x10c 机界骑士	ジャックナイツ
@@ -2381,11 +2381,11 @@ set: 机界骑士系列
 	62530723 # 星遗物的低语
 	98935722 # 沉眠于星遗物的深层
 	68191756 # 星遗物的机忆
-tag: 机界骑士
+tag: 잭나이츠
 	config: global
 	config: upgrade
 	! [机界骑士系列] ori >= 6
-deck: 机界骑士 [1]
+deck: 잭나이츠 [1]
 	! [机界骑士系列] ori >= 12
 	refuse: 机界骑士
 
@@ -2394,16 +2394,16 @@ set: 魔导兽系列
 	inner set: 魔导兽
 	94599451 # 魔导研究所
 	21984400 # 兽·魔·导
-deck: 魔导兽 [0]
+deck: 마도兽 [0]
 	! [魔导兽系列] main >= 9
 	refuse: 魔导兽
 	refuse: 魔力指示物
-tag: 魔导兽
+tag: 마도兽
 	config: global
 	! [魔导兽系列] main >= 4
 
 #0x10e 进化药	進化薬
-tag: 进化药
+tag: 진화약
 	config: global
 	! 41782653 >= 1 # 超顶科技血神翼龙
 	! 38179121 >= 1 # 究极进化药
@@ -2413,23 +2413,23 @@ tag: 进化药
 #0x1110 眼纳祭神	アイズ・サクリファイス
 
 #0x111 武装龙	アームド・ドラゴン
-deck: 武装龙 [0]
+deck: 암드드래곤 [0]
 	! [武装龙] main >= 4
 
 #0x112 幻崩	トロイメア
-tag: 幻崩
+tag: 트로이메어
 	config: global
 	config: upgrade
 	! [幻崩] ex >= 5
 	! 10158145 main >= 1 # 梦幻崩界 伊娃力丝
-deck: 幻崩 [0]
+deck: 트로이메어 [0]
 	! [幻崩] ex >= 5
 	! 10158145 main >= 2 # 梦幻崩界 伊娃力丝
 	! 25163979 main >= 1 # 诱向星遗物的噩梦
 	refuse: 幻崩
 
 #0x113 灵神	霊神
-tag: 灵神
+tag: 령신
 	config: global
 	config: upgrade
 	! [灵神] main >= 6
@@ -2438,28 +2438,28 @@ tag: 灵神
 set: 空牙团系列
 	inner set: 空牙团
 	64400161 # 飞龙艇-幻舵拉
-deck: 空牙团 [1]
+deck: 공아단 [1]
 	! [空牙团系列] ori >= 10
 
 #0x115 闪刀	閃刀
 #0x1115 闪刀	閃刀姫
-tag: 闪刀
+tag: 섬도
 	config: global
 	config: upgrade
 	! [闪刀] ori >= 7
-deck: 闪刀姬 [1]
+deck: 섬도희 [1]
 	! [闪刀] ori >= 15
 	refuse: 闪刀
 
 #0x116 圣像骑士	パラディオン
-deck: 圣像骑士 [1]
+deck: 파라디온 [1]
 	! [圣像骑士] ori >= 10
 
 #0x117 魔神仪	魔神儀
-tag: 魔神仪
+tag: 데블리철
 	config: global
 	! [魔神仪] main >= 5
-deck: 魔神仪 [0]
+deck: 데블리철 [0]
 	! [魔神仪] main >= 12
 	! 65877963 main >= 1 # 魔神仪-史莱姆圣杯
 	! 86758915 main >= 1 # 魔神仪的祝诞
@@ -2468,61 +2468,61 @@ deck: 魔神仪 [0]
 #0x118 电脑网
 
 #0x119 转生炎兽
-deck: 转生炎兽 [1]
+deck: 샐러맨그레이트 [1]
 	! [转生炎兽] ori >= 10
 
 #0x11a 恐龙摔跤手
-deck: 恐龙摔跤手 [1]
+deck: 다이너레슬러 [1]
 	! [恐龙摔跤手] ori >= 7
 
 #0x11b 自奏圣乐
 set: 自奏圣乐系列
 	inner set: 自奏圣乐
 	93920420 # 星遗物-『星杖』
-tag: 自奏圣乐
+tag: 오르페골
 	config: global
 	config: upgrade
 	! [自奏圣乐系列] main >= 3
 	! [自奏圣乐系列] ori >= 6
-deck: 自奏圣乐 [1]
+deck: 오르페골 [1]
 	! [自奏圣乐系列] ori >= 8
 	refuse: 自奏圣乐
 
 #0x11c 雷龙
-tag: 雷龙
+tag: 썬더드래곤
 	config: global
 	config: upgrade
 	! [雷龙] ori >= 7
-deck: 雷龙 [1]
+deck: 썬더드래곤 [1]
 	! [雷龙] ori >= 10
 	refuse: 雷龙
 
 #0x11d 禁忌的
 #0x11e 未界域
-tag: 未界域
+tag: 미계역
 	config: global
 	config: upgrade
 	! [未界域] ori >= 6
-deck: 未界域 [1]
+deck: 미계역 [1]
 	! [未界域] ori >= 15
 	refuse: 未界域
 
 #0x11f 奈芙提斯
-tag: 奈芙提斯
+tag: 네프티스
 	config: global
 	config: upgrade
 	! [奈芙提斯] ori >= 6
-deck: 奈芙提斯 [1]
+deck: 네프티스 [1]
 	! [奈芙提斯] ori >= 12
 	refuse: 奈芙提斯
 	refuse: 凤凰神
 
 #0x120 调皮宝贝
-deck: 调皮宝贝 [1]
+deck: 프랭키즈 [1]
 	! [调皮宝贝] ori >= 12
 
 #0x121 魔妖
-deck: 魔妖 [1]
+deck: 마요괴 [1]
 	! [魔妖] ori >= 12
 
 #0x122 女武神|非「武神」
@@ -2533,7 +2533,7 @@ set: 女武神系列
 	37354507 # 女神薇儿丹蒂的引导
 	64749612 # 女神乌尔德的裁断
 
-deck: 女武神 [1]
+deck: 女무사신 [1]
 	or: 
 		! [女武神系列] main >= 12
 		and:
@@ -2547,14 +2547,14 @@ set: 蔷薇龙系列
 	53503015 # 冷蔷薇的抱香
 	99092624 # 漆黑之蔷薇的开华
 	33698022 # 月华龙 黑蔷薇
-deck: 蔷薇龙 [1]
+deck: 로즈드래곤 [1]
 	! [蔷薇龙系列] ori >= 7
 
 #0x124 机械天使
 #0x125 笑容
 
 #0x126 时间潜行者
-deck: 时间潜行者 [1]
+deck: 크로노다이버 [1]
 	! [时间潜行者] ori >= 9
 
 #0x127 无限起动
@@ -2562,18 +2562,18 @@ set: 无限起动系列
 	inner set: 无限起动
 	96462121 # 超接地展开
 	22866836 # 超信地旋回
-deck: 无限起动 [1]
+deck: 무한기동 [1]
 	! [无限起动系列] ori >= 10
 
 #0x128 魔女术
-deck: 魔女术 [1]
+deck: 위치크래프트 [1]
 	! [魔女术] ori >= 12
 
 #0x129 咒眼
-tag: 咒眼
+tag: 주안
 	config: global
 	! [咒眼] ori >= 5
-deck: 咒眼 [1]
+deck: 주안 [1]
 	! [咒眼] ori >= 8
 	refuse: 咒眼
 
@@ -2581,21 +2581,21 @@ deck: 咒眼 [1]
 set: 恩底弥翁系列
 	inner set: 恩底弥翁
 	38943357 # 魔力统辖
-tag: 恩底弥翁
+tag: 엔디미온
 	config: global
 	! [恩底弥翁系列] ori >= 7
 
-deck: 恩底弥翁 [1]
+deck: 엔디미온 [1]
 	! [恩底弥翁系列] ori >= 12
 	refuse: 恩底弥翁
 	refuse: 魔力指示物
 
 #0x12b 海晶少女
-tag: 海晶少女
+tag: 마린세스
 	config: global
 	! [海晶少女] ori >= 6
 
-deck: 海晶少女 [1]
+deck: 마린세스 [1]
 	! [海晶少女] ori >= 10
 	refuse: 海晶少女
 
@@ -2603,11 +2603,11 @@ deck: 海晶少女 [1]
 set: 天威系列
 	inner set: 天威
 	65124425 # 虚空之龙轮
-deck: 天威 [1]
+deck: 천위 [1]
 	! [天威系列] ori >= 15
 
 #0x12d 斯摩夫
-deck: 斯摩夫 [1]
+deck: 시무르그 [1]
 	! [斯摩夫] ori >= 15
 
 # 0x12e 占卜魔女
@@ -2617,7 +2617,7 @@ set: 占卜魔女系列
 	31461282 # 开运奇迹石
 	67955331 # 幸运的预借
 
-deck: 占卜魔女 [1]:
+deck: 점쟁이마녀 [1]:
 	! [占卜魔女系列] main >= 12
 
 # 0x12f 蜂军
@@ -2626,31 +2626,31 @@ set: 蜂军系列
 	52838896 # 一齐蜂起
 	89226534 # 苏生之蜂玉
 
-deck: 蜂军 [1]
+deck: B·F [1]
 	! [蜂军系列] ori >= 12
 
 # 0x130 破械
 # 0x1130 破械神
-deck: 破械 [1]
+deck: 언체인드 [1]
 	! [破械] ori >= 9
 
 # 0x131 梦魔镜
-deck: 梦魔镜 [1]
+deck: 몽마경 [1]
 	! [梦魔镜] ori >= 8
 
 # 0x132 斩机
-deck: 斩机 [1]
+deck: 참기 [1]
 	! [斩机] ori >= 8
 
 # 0x133 半龙女仆
-deck: 半龙女仆 [1]
+deck: 드래곤메이드 [1]
 	! [半龙女仆] ori >= 8
 
 # 0x134 王战
-tag: 王战
+tag: 제너레이드
 	config: global
 	! [王战] ori >= 4
-deck: 王战 [1]
+deck: 제너레이드 [1]
 	! [王战] ori >= 8
 	refuse: 王战
 
@@ -2660,49 +2660,49 @@ set: 艾系列
 	inner set: @火灵天星
 	inner set: “艾”
 
-deck: 火灵天星 [1]
+deck: @이그니스터 [1]
 	! [艾系列] ori >= 12
 
 # 0x137 战华	戦華
-deck: 战华 [1]
+deck: 전황 [1]
 	! [战华] ori >= 10
 	
 # 0x138 巨石遗物	メガリス
-tag: 巨石遗物
+tag: 메가리스
 	config: global
 	config: upgrade
 	! [巨石遗物] main >= 3
 
-deck: 巨石遗物 [1]
+deck: 메가리스 [1]
 	! [巨石遗物] main >= 9
 	refuse: 巨石遗物
 
 # 0x13c 代码破坏者
-deck: 代码破坏者 [0]
+deck: 코드브레이커 [0]
 	! [代码破坏者] main >= 2
 	! [代码破坏者] ex >= 2
 
 # 0x13d 星义
-tag: 星义
+tag: 네메시스
 	config: global
 	! [星义] ori >= 4
 
-deck: 星义 [1]
+deck: 네메시스 [1]
 	! [星义] ori >= 9
 	refuse: 星义
 
 # 0x13e 巴巴罗斯
 # 0x13f 海造贼
-deck: 海造贼 [1]
+deck: 플런드롤 [1]
 	! [海造贼] ori >= 12
 
 # 0x140 魔救
-deck: 魔救 [1]
+deck: 아다마시아 [1]
 	! [魔救] main >= 4
 	! [魔救] ori >= 7
 
 # 0x141 六花
-deck: 六花 [1]
+deck: 육화 [1]
 	! [六花] ori >= 12
 
 # 0x142 黄金国
@@ -2714,12 +2714,12 @@ set: 黄金国系列
 	31434645 # 被诅咒的黄金国度
 	92379223 # 黄金之征服王
 
-tag: 黄金国
+tag: 엘드리치
 	config: global
 	config: upgrade
 	! [黄金国系列] ori >= 6
 
-deck: 黄金国 [1]
+deck: 엘드리치 [1]
 	! [黄金国系列] ori >= 10
 	refuse: 黄金国
 	refuse: 不死族
@@ -2729,44 +2729,44 @@ set: 教导系列
 	inner set: 教导
 	41373230 # 灰烬龙 落胤龙
 	1984618 # 天底的使徒
-tag: 教导
+tag: 드라그마
 	config: global
 	config: upgrade
 	! [教导系列] ori >= 4
-deck: 教导 [0]
+deck: 드라그마 [0]
 	! [教导系列] ori >= 10
 	refuse: 教导
 
 #setname 0x146 童话动物
-deck: 童话动物 [1]
+deck: 메르피 [1]
 	! [童话动物] ori >= 8
 
 #setname 0x147 波波
-deck: 波波 [0]
+deck: 포탄 [0]
 	! [波波] ori >= 6
 
 #setname 0x148 罗兰
 set: 焰圣骑士系列
 	inner set: 焰圣骑士
 	inner set: 焰圣剑
-deck: 焰圣骑士 [2]
+deck: 염성기사 [2]
 	! [焰圣骑士系列] ori >= 6
 
 #setname 0x149 化石
-deck: 化石 [1]
+deck: 화석 [1]
 	! [化石] ori >= 9
 
 #setname 0x14a 源数
 #setname 0x114a 源数之门
-tag: 源数
+tag: 누메론
 	config: global
 	! [源数] ori >= 8
-deck: 源数 [0]
+deck: 누메론 [0]
 	! [源数] ori >= 15
 	refuse: 源数
 
 #setname 0x14b 机块
-deck: 机块 [1]
+deck: 기괴 [1]
 	! [机块] ori >= 10
 
 #setname 0x14c 灵术
@@ -2780,20 +2780,20 @@ deck: 机块 [1]
 #setname 0xc14c 暗灵术
 
 #setname 0x14d 铁兽
-deck: 铁兽 [1]
+deck: 트라이브리게이드 [1]
 	! [铁兽] ori >= 10
 
 #setname 0x14e 电脑堺
 #setname 0x114e 电脑堺门
-deck: 电脑堺 [1]
+deck: 전뇌계 [1]
 	! [电脑堺] ori >= 10
 
 #setname 0x14f 双天
-deck: 双天 [1]
+deck: 쌍천 [1]
 	! [双天] ori >= 9
 
 #setname 0x150 大贤者	マギストス
-deck: 大贤者 [1]
+deck: 마기스토스 [1]
 	! [大贤者] ori >= 12
 
 #setname 0x1151 直播☆双子	Live☆Twin
@@ -2804,11 +2804,11 @@ set: 双子系列
 	inner set: 直播☆双子
 	inner set: 邪恶★双子
 	61976639 # 秘密口令句
-deck: 双子 [1]
+deck: Evil★Twin [1]
 	! [双子] ori >= 12
 
 #setname 0x154 龙辉巧	ドライトロン
-deck: 龙辉巧 [1]
+deck: 드라이트론 [1]
 	! [龙辉巧] ori >= 8
 	! 97148796 main >= 1 # 龙辉巧-右枢α
 	! 96026108 main >= 1 # 龙辉巧-上弼ζ
@@ -2817,15 +2817,15 @@ deck: 龙辉巧 [1]
 set: 护宝炮妖系列
 	inner set: 护宝炮妖
 	60884672 # 大沙海 黄金戈尔康达
-deck: 护宝炮妖 [1]
+deck: 스프리건즈 [1]
 	! [护宝炮妖系列] ori >= 12
 
 #setname 0x156 治安战警队	S－Force
-deck: 治安战警队 [1]
+deck: S-Force [1]
 	! [治安战警队] ori >= 10
 
 #setname 0x157 秘异三变	Myutant
-deck: 秘异三变 [1]
+deck: 뮤트리아 [1]
 	! [秘异三变] ori >= 9
 
 #setname 0x1158 圣蔓	サンヴァイン
@@ -2835,11 +2835,11 @@ set: 圣天树系列
 	inner set: 圣蔓
 	inner set: 圣天树
 	inner set: 圣种
-deck: 圣天树 [1]
+deck: 생아발론 [1]
 	! [圣天树系列] ori > 9
 
 #setname 0x159 圣夜骑士	ホーリーナイツ
-deck: 圣夜骑士 [1]
+deck: 홀리나이츠 [1]
 	! [圣夜骑士] ori > 6
 
 #setname 0x15b 惊乐	アメイズメント
@@ -2848,10 +2848,10 @@ set: 惊乐系列
 	inner set: 惊乐
 	inner set: 游乐设施
 	70389815 # 惊奇时段通行证
-deck: 惊乐 [1]
+deck: 어메이즈먼트 [1]
 	! [惊乐系列] ori >= 12
 	refuse: 惊乐
-tag: 惊乐
+tag: 어메이즈먼트
 	config: global
 	! [惊乐系列] ori >= 6
 	
@@ -2867,11 +2867,11 @@ set: 落胤
 	83199011 # 护宝炮妖呼唤！
 	48285768 # 护宝炮妖欢乐制造机
 	55273560 # 白之圣女 艾克莉西娅
-tag: 烙印
+tag: 낙인
 	config: global
 	config: upstream
 	! [烙印] ori >= 9
-deck: 落胤 [1]
+deck: 낙윤 [1]
 	! 68468459 main >= 2 # 阿不思的落胤
 	! [落胤] main >= 6
 	! [落胤] ori >= 12
@@ -2879,38 +2879,38 @@ deck: 落胤 [1]
 #setname 0x15e 降阶魔法	RDM
 
 #setname 0x15f 战吼	War Rock
-deck: 战吼 [1]
+deck: 워크라이 [1]
 	! [战吼] ori >= 15
 
 #setname 0x160 物质炉	Materiactor
-tag: 物质炉
+tag: 머티리악토르
 	config: global
 	! [物质炉] ori >= 4
 
 #setname 0x161 溟界
-tag: 溟界
+tag: 명세계
 	config: global
 	config: upgrade
 	! [溟界] ori >= 7
-deck: 溟界 [1]
+deck: 명세계 [1]
 	! [溟界] ori >= 12
 	refuse: 溟界
 
 #setname 0x162 七音服	ドレミコード
-tag: 七音服
+tag: 도레미코드
 	config: global
 	config: upgrade
 	! [七音服] ori >= 7
-deck: 七音服 [1]
+deck: 도레미코드 [1]
 	! [七音服] ori >= 15
 	refuse: 七音服
 
 #setname 0x163 北极天熊	ベアルクティ
-tag: 北极天熊
+tag: 베어루크티
 	config: global
 	config: upgrade
 	! [北极天熊] ori >= 6
-deck: 北极天熊 [1]
+deck: 베어루크티 [1]
 	! [北极天熊] ori >= 12
 	refuse: 北极天熊
 
@@ -2920,22 +2920,22 @@ set: 死狱乡系列
 	36637374 # 烙印开幕
 	82738008 # 赫之烙印
 	6855503 # 赫灼龙 伪装龙
-tag: 死狱乡
+tag: 데스피아
 	config: global
 	config: upgrade
 	! [死狱乡系列] main >= 3
 	! [死狱乡系列] ori >= 6
-deck: 死狱乡 [1]
+deck: 데스피아 [1]
 	! [死狱乡系列] main >= 6
 	! [死狱乡系列] ori >= 12
 	refuse: 死狱乡
 
 #setname 0x165 魔键	魔鍵
-deck: 魔键 [1]
+deck: 마건 [1]
 	! [魔键] ori >= 9
 
 #setname 0x166 军贯	軍貫
-deck: 军贯 [1]
+deck: 군관 [1]
 	! [军贯] ori >= 9
 	
 #setname 0x1167 森之圣兽	森の聖獣
@@ -2953,7 +2953,7 @@ set: 机巧传系列
 	63633694 # 机巧蹄-天迦久御雷
 	43218406 # 机巧辰-高暗御津羽靇
 	24793135 # 机巧传-神使记纪图
-deck: 机巧传 [1]
+deck: 자동기계传 [1]
 	! [机巧传系列] ori >= 10
 
 #setname 0x168 隐形水母怪	ステルス・クラーゲン
@@ -2963,47 +2963,47 @@ deck: 机巧传 [1]
 set: 相剑系列
 	inner set: 相剑
 	55273560 # 白之圣女 艾克莉西娅
-deck: 相剑 [1]
+deck: 상검 [1]
 	! [相剑] ori >= 12
 
 #setname 0x16c 冰水	氷水
-tag: 冰水系列
+tag: 히스이系列
 	config: global
 	! [冰水] ori >= 6
-deck: 冰水 [1]
+deck: 히스이 [1]
 	! [冰水] ori >= 12
 	refuse: 冰水
 
 #setname 0x16d 随风旅鸟	ふわんだりぃず
-tag: 随风旅鸟
+tag: 후완다리즈
 	config: global
 	config: upgrade
 	! [随风旅鸟] ori >= 6
-deck: 随风旅鸟 [1]
+deck: 후완다리즈 [1]
 	! [随风旅鸟] ori >= 15
 	refuse: 随风旅鸟
 
 #setname 0x16e 拓扑	トポロジック
 #setname 0x16f 许珀里翁	ヒュペリオン
 #setname 0x170 甲虫骑兵	Beetrooper
-tag: 甲虫骑兵
+tag: 비틀트루퍼
 	config: global
 	config: upgrade
 	! [甲虫骑兵] ori >= 6
-deck: 甲虫骑兵 [1]
+deck: 비틀트루퍼 [1]
 	! [甲虫骑兵] ori >= 15
 	refuse: 甲虫骑兵
 
 #setname 0x171 朋克	P.U.N.K.
-deck: 朋克 [1]
+deck: P.U.N.K. [1]
 	! [朋克] ori >= 15
 
 #setname 0x172 救祓少女	エクソシスター
-tag: 救祓少女
+tag: 엑소시스터
 	config: global
 	config: upgrade
 	! [救祓少女] ori >= 6
-deck: 救祓少女 [1]
+deck: 엑소시스터 [1]
 	! [救祓少女] ori >= 15
 	refuse: 救祓少女
 
@@ -3020,25 +3020,25 @@ set: 勇者系列
 	91228233 # 迷幻花之森
 	27623932 # 雷霆放电
 	64018647 # 复活气息
-tag: 勇者
+tag: 용사
 	config: global
 	config: upgrade
 	! [勇者系列] origin >= 6
-deck: 勇者 [1]
+deck: 용사 [1]
 	! [勇者系列] origin >= 18
 	refuse: 勇者
 
 #setname 0x173 恐啡肽狂龙	ダイノルフィア
-tag: 恐啡肽狂龙
+tag: 다이널피아
 	config: global
 	config: upgrade
 	! [恐啡肽狂龙] ori >= 6
-deck: 恐啡肽狂龙 [1]
+deck: 다이널피아 [1]
 	! [恐啡肽狂龙] ori >= 15
 	! [恐啡肽狂龙] ex >= 3
 	refuse: 恐啡肽狂龙
 
 #setname 0x174 恶魔娘	悪魔嬢
-tag: 恶魔娘
+tag: 악마양
 	config: global
 	! [恶魔娘] ori >= 4

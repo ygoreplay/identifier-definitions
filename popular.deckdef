@@ -1,17 +1,17 @@
-deck: 十二兽坏兽 [10]
+deck: 십이수파괴수 [10]
 	! [十二兽] main > 2
 	! [坏兽] main >= 2
 	! 遭受妨碍的坏兽安眠 main >= 1
 	! 56111151 < 1
 	refuse: 十二兽
 	refuse: 坏兽
-deck: 十二兽召唤兽 [10]
+deck: 십이수소환수 [10]
 	! [十二兽] main > 2
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
 	! 74063034 main >= 1 # 召唤魔术
 	refuse: 十二兽
 	refuse: 召唤兽
-deck: 十二兽召唤兽坏兽 [20]
+deck: 십이수괴수소환수 [20]
 	! [十二兽] main > 2
 	! [坏兽] main >= 2
 	! 遭受妨碍的坏兽安眠 main >= 1
@@ -22,7 +22,7 @@ deck: 十二兽召唤兽坏兽 [20]
 	refuse: 召唤兽
 	refuse: 坏兽
 
-deck: 十二兽真龙 [10]
+deck: 십이수진룡 [10]
 	! [十二兽] main > 2
 	! [真龙] main >= 4
 	#! 龙神阵·略图 main >= 2
@@ -30,7 +30,7 @@ deck: 十二兽真龙 [10]
 	refuse: 真龙皇
 	#refuse: 真龙剑皇
 
-deck: 十二兽捕食真龙 [20]
+deck: 십이수프레데터진룡 [20]
 	! [十二兽] main > 2
 	! 捕食植物 蜂兰蝎 >= 2
 	! 捕食植物 蛇瓶草眼镜蛇 >= 1
@@ -41,7 +41,7 @@ deck: 十二兽捕食真龙 [20]
 	refuse: 真龙皇
 	#refuse: 真龙剑皇
 
-deck: 十二兽真龙坏兽 [20]
+deck: 십이수진룡파괴수 [20]
 	! [十二兽] main > 2
 	! [真龙] main >= 4
 	#! 龙神阵·略图 main >= 2
@@ -53,50 +53,50 @@ deck: 十二兽真龙坏兽 [20]
 	#refuse: 真龙剑皇
 	refuse: 坏兽
 
-deck: 十二兽Kozmo [10]
+deck: 십이수Kozmo [10]
 	! [十二兽] main > 2
 	! [星际仙踪] main >= 8
 	refuse: 十二兽
 	refuse: Kozmo
 
-deck: Kozmo真龙 [10]
+deck: Kozmo진룡 [10]
 	! [星际仙踪] main >= 8
 	#! 龙神阵·略图 main >= 2
 	! [真龙] main >= 2
 	refuse: Kozmo
 
-deck: 真龙龙星 [10]
+deck: 진룡룡성 [10]
 	! [真龙] main >= 3
 	! [龙星] main >= 4
 	refuse: 真龙皇
 	refuse: 龙星
 
-deck: 炼装龙星 [10]
+deck: 메탈포제룡성 [10]
 	! [炼装] main >= 9
 	! [龙星] main >= 6
 	refuse: 炼装
 	refuse: 龙星
 	refuse: 源龙星
 
-deck: 十二兽炼装 [10]
+deck: 십이수메탈포제 [10]
 	! [十二兽] main > 2
 	! [炼装] main >= 12
 	refuse: 十二兽
 	refuse: 炼装
 
-deck: 削命真龙 [5]
+deck: 생단진룡 [5]
 	! [真龙] main >= 10
 	! 削命的宝札 main >= 2
 	#refuse: 真龙剑皇
 	refuse: 削命
 
-deck: 真龙炼装 [10]
+deck: 진룡메탈포제 [10]
 	! [炼装] main >= 12
 	! [真龙] main >= 2
 	refuse: 真龙皇
 	#refuse: 真龙剑皇
 	refuse: 炼装
-deck: 真龙炼装神数 [20]
+deck: 진룡메탈포제세피라 [20]
 	! [炼装] main >= 12
 	! [真龙] main >= 2
 	! [神数] main >= 5
@@ -105,13 +105,13 @@ deck: 真龙炼装神数 [20]
 	refuse: 炼装
 	refuse: 神数
 
-deck: 真龙六武众 [10]
+deck: 진룡여섯무사 [10]
 	! [真龙] main >= 3
 	! [六武众] main >= 6
 	refuse: 六武众
 	refuse: 真龙皇
 
-deck: 真龙WW [10]
+deck: 진룡WW [10]
 	! [风魔女] main >= 3
 	! [真龙] main >= 2
 	refuse: 风魔女
@@ -119,14 +119,14 @@ deck: 真龙WW [10]
 	refuse: 真龙皇
 	#refuse: 真龙剑皇
 
-deck: 坏兽召唤兽 [10]
+deck: 파괴수소환수 [10]
 	! [坏兽] main >= 2
 	! 遭受妨碍的坏兽安眠 main >= 1
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
 	! 74063034 main >= 1 # 召唤魔术
 	refuse: 坏兽
 	refuse: 召唤兽
-deck: 坏兽魔导召唤兽 [20]
+deck: 파괴수마도소환수 [20]
 	! [坏兽] main >= 2
 	! 14824019 main >= 1 # 魔导书士 巴特尔
 	! 23314220 main >= 1 # 冰火之魔导书
@@ -136,7 +136,7 @@ deck: 坏兽魔导召唤兽 [20]
 	refuse: 坏兽
 	refuse: 召唤兽
 	refuse: 魔导
-deck: 坏兽WW召唤兽 [20]
+deck: 파괴수WW소환수 [20]
 	! [风魔女] main >= 3
 	! [坏兽] main >= 2
 	! 遭受妨碍的坏兽安眠 main >= 1
@@ -146,7 +146,7 @@ deck: 坏兽WW召唤兽 [20]
 	refuse: 同调系
 	refuse: 坏兽
 	refuse: 召唤兽
-deck: WW辉夜坏兽 [20]
+deck: WW괴수카구야 [20]
 	! [风魔女] main >= 3
 	! [坏兽] main >= 2
 	! 86937530 main >= 2 # 妖精传姬-辉夜
@@ -154,20 +154,20 @@ deck: WW辉夜坏兽 [20]
 	refuse: 坏兽
 	refuse: 辉夜
 	refuse: 同调系
-deck: 辉夜坏兽 [0]
+deck: 괴수카구야 [0]
 	! [坏兽] main >= 4
 	! 86937530 main >= 3 # 妖精传姬-辉夜
 	refuse: 辉夜
 	refuse: 坏兽
 
-deck: 真龙召唤兽 [10]
+deck: 진룡소환수 [10]
 	! [真龙] main >= 2
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
 	! 74063034 main >= 1 # 召唤魔术
 	refuse: 召唤兽
 	refuse: 真龙皇
 	#refuse: 真龙剑皇
-deck: 魔导真龙召唤兽 [20]
+deck: 마도진룡소환수 [20]
 	! [真龙] main >= 2
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
 	! 74063034 main >= 1 # 召唤魔术
@@ -177,7 +177,7 @@ deck: 魔导真龙召唤兽 [20]
 	refuse: 真龙皇
 	#refuse: 真龙剑皇
 	refuse: 魔导
-deck: 真龙WW召唤兽 [20]
+deck: 진룡WW소환수 [20]
 	! [风魔女] main >= 3
 	! [真龙] main >= 2
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
@@ -187,7 +187,7 @@ deck: 真龙WW召唤兽 [20]
 	refuse: 同调系
 	refuse: 真龙皇
 	#refuse: 真龙剑皇
-deck: 魔导真龙WW召唤兽 [30]
+deck: 마도진룡WW소환수 [30]
 	! [风魔女] main >= 3
 	! [真龙] main >= 2
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
@@ -201,21 +201,21 @@ deck: 魔导真龙WW召唤兽 [30]
 	#refuse: 真龙剑皇
 	refuse: 魔导
 
-deck: 机界召唤兽 [10]
+deck: 机界소환수 [10]
 	! [机界骑士] main >= 5
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
 	! 74063034 main >= 1 # 召唤魔术
 	refuse: 机界骑士
 	refuse: 召唤兽
 
-deck: 教导召唤兽 [10]
+deck: 드라그마소환수 [10]
 	! [教导系列] ori >= 8
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
 	! 74063034 main >= 1 # 召唤魔术
 	refuse: 教导	
 	refuse: 召唤兽
 
-deck: 真龙炼装Kozmo [20]
+deck: 진룡메탈포제Kozmo [20]
 	! [炼装] main >= 6
 	! [真龙] main >= 2
 	! [星际仙踪] main >= 6
@@ -224,13 +224,13 @@ deck: 真龙炼装Kozmo [20]
 	refuse: Kozmo
 	refuse: 炼装
 
-deck: 真龙古机 [10]
+deck: 진룡古机 [10]
 	! [真龙] main >= 2
 	! [古代的机械] main >= 4
 	refuse: 真龙皇
 	#refuse: 真龙剑皇
 
-deck: 十二兽真龙炼装 [20]
+deck: 십이수진룡메탈포제 [20]
 	! [十二兽] main > 2
 	! [炼装] main >= 12
 	! [真龙] main >= 2
@@ -257,13 +257,13 @@ set: 怪兽帝
 	51945556 # 雷帝 扎博尔格
 	57666212 # 光帝 克赖斯
 	## 暗帝不作考虑
-deck: 真龙帝 [10]
+deck: 진룡제왕 [10]
 	! [真龙] main >= 1
 	! [怪兽帝] main >= 2
 	#! 龙神阵·略图 main >= 1
 	refuse: 真龙皇
 	#refuse: 真龙剑皇
-deck: 割草帝 [10]
+deck: 제왕 [10]
 	! [怪兽帝] main >= 3
 	! 11110587 main >= 2 # 邻家割草
 	refuse: 割草
@@ -301,7 +301,7 @@ set: 恐龙族系列
 	41782653 # 超顶科技血神翼龙
 	38572779 # 幻创之混种恐龙
 	80727721 # 朱罗纪异特龙
-deck: 恐龙龙星 [10]
+deck: 공룡룡성 [10]
 	! [恐龙族系列] main >= 6
 	restrains: >= 2
 		! 30106950 main >= 1 # 炎龙星-狻猊
@@ -311,12 +311,12 @@ deck: 恐龙龙星 [10]
 	refuse: 龙星
 	refuse: 源龙星
 	refuse: 进化药
-deck: 恐龙真龙 [10]
+deck: 공룡진룡 [10]
 	! [恐龙族系列] main >= 6
 	! [真龙] main >= 2
 	refuse: 恐龙族
 	refuse: 真龙皇
-deck: 恐龙真龙龙星 [20]
+deck: 공룡진룡룡성 [20]
 	! [恐龙族系列] main >= 6
 	! [真龙] main >= 2
 	! [龙星] main >= 4
@@ -324,42 +324,42 @@ deck: 恐龙真龙龙星 [20]
 	refuse: 真龙皇
 	refuse: 龙星
 	refuse: 源龙星
-deck: 影依恐龙 [10]
+deck: 섀도르공룡 [10]
 	! [影依] ori >= 6
 	! 41782653 main >= 1
 	refuse: 恐龙族
 	refuse: 影依
 	refuse: 进化药
-deck: 雷龙恐龙 [10]
+deck: 썬더드래곤공룡 [10]
 	! [恐龙族系列] main >= 6
 	! [雷龙] ori >= 5
 	refuse: 恐龙族
 	refuse: 雷龙
 	refuse: 进化药
 
-deck: 十二兽狱火机 [10]
+deck: 십이수인페르노이드 [10]
 	! [十二兽] main > 2
 	! [狱火机] main >= 6
 	refuse: 十二兽
 	refuse: 狱火机
-deck: 割草狱火机 [10]
+deck: 인페르노이드 [10]
 	! [狱火机] main >= 6
 	! 11110587 main >= 2 # 邻家割草
 	refuse: 割草
 	refuse: 狱火机
-deck: 割草十二兽狱火机 [20]
+deck: 십이수인페르노이드 [20]
 	! [十二兽] main > 2
 	! [狱火机] main >= 6
 	! 11110587 main >= 2 # 邻家割草
 	refuse: 割草
 	refuse: 十二兽
 	refuse: 狱火机
-deck: 黯黑狱火机 [10]
+deck: 인페르노이드 [10]
 	! [狱火机] main >= 6
 	! 59160188 main >= 1 # 黯黑世界
 	refuse: 狱火机
 	refuse: 黯黑世界
-deck: 割草黯黑狱火机 [20]
+deck: 인페르노이드 [20]
 	! [狱火机] main >= 6
 	! 59160188 main >= 1 # 黯黑世界
 	! 11110587 main >= 2 # 邻家割草
@@ -367,7 +367,7 @@ deck: 割草黯黑狱火机 [20]
 	refuse: 狱火机
 	refuse: 黯黑世界
 
-deck: 光白火 [20]
+deck: 백설시라누이라이트로드 [20]
 	! [光道] main >= 3
 	! 妖精传姬-白雪 main >= 1
 	! [不知火] main >= 4
@@ -375,7 +375,7 @@ deck: 光白火 [20]
 	refuse: 白雪
 	refuse: 不知火
 	refuse: 不死族
-deck: 十二兽光白火 [30]
+deck: 십이수백설시라누이라이트로드 [30]
 	! [十二兽] main > 2
 	! [光道] main >= 3
 	! 妖精传姬-白雪 main >= 1
@@ -386,7 +386,7 @@ deck: 十二兽光白火 [30]
 	refuse: 不知火
 	refuse: 不死族
 
-deck: 十二兽捕食不知火 [20]
+deck: 십이수프레데터시라누이 [20]
 	! [十二兽] main > 2
 	! 捕食植物 蜂兰蝎 >= 2
 	! 捕食植物 蛇瓶草眼镜蛇 >= 1
@@ -396,20 +396,20 @@ deck: 十二兽捕食不知火 [20]
 	refuse: 不知火
 	refuse: 不死族
 
-deck: AF召唤兽 [10]
+deck: AF소환수 [10]
 	! [古遗物] main >= 4
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
 	! 74063034 main >= 1 # 召唤魔术
 	refuse: AF
 	refuse: 召唤兽
-deck: WW召唤兽 [10]
+deck: WW소환수 [10]
 	! [风魔女] main >= 3
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
 	! 74063034 main >= 1 # 召唤魔术
 	refuse: 风魔女
 	refuse: 召唤兽
 	refuse: 同调系
-deck: 魔导WW召唤兽 [20]
+deck: 마도WW소환수 [20]
 	! [风魔女] main >= 3
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
 	! 74063034 main >= 1 # 召唤魔术
@@ -419,7 +419,7 @@ deck: 魔导WW召唤兽 [20]
 	refuse: 召唤兽
 	refuse: 同调系
 	refuse: 魔导
-deck: AFWW召唤兽 [20]
+deck: AFWW소환수 [20]
 	! [古遗物] main >= 4
 	! [风魔女] main >= 3
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
@@ -428,7 +428,7 @@ deck: AFWW召唤兽 [20]
 	refuse: 风魔女
 	refuse: 召唤兽
 
-deck: 十二兽海王星 [10]
+deck: 십이수海王星 [10]
 	! [十二兽] main > 2
 	! 简易融合 >= 2
 	! 抒情歌鸲-独立夜莺 >= 1
@@ -436,19 +436,19 @@ deck: 十二兽海王星 [10]
 	refuse: 十二兽
 	refuse: 杯面
 
-deck: 十二兽月光 [10]
+deck: 십이수문라이트 [10]
 	! [十二兽] main > 2
 	! [月光] main >= 4
 	refuse: 十二兽
 	refuse: 月光
 
-deck: 十二兽影依 [10]
+deck: 십이수섀도르 [10]
 	! [十二兽] main >= 2
 	! [影依] main >= 6
 	refuse: 十二兽
 	refuse: 影依
 
-deck: 圣遗 [10]
+deck: 성각리추어 [10]
 	! [圣刻] >= 4
 	! [遗式] main >= 4
 	refuse: 圣刻
@@ -475,7 +475,7 @@ deck: 红龙DH [10]
 			! 拉长石龙 main >= 1
 			! 碳素龙 main >= 1
 
-deck: 刚鬼英雄 [10]
+deck: 강귀히어로 [10]
 	! [刚鬼] ori >= 3
 	! [英雄] ori >= 4
 	refuse: hero
@@ -507,31 +507,31 @@ deck: WWSR [10]
 	refuse: 风魔女
 	refuse: 同调系
 
-deck: WW威风 [10]
+deck: WW마제스펙터 [10]
 	! [风魔女] main >= 3
 	! [威风妖怪] main >= 6
 	refuse: 风魔女
 	refuse: 威风妖怪
 
-deck: 异色眼魔术师 [10]
+deck: 오드아이즈마술사 [10]
 	! 天空的虹彩 main >= 1
 	! [异色眼] ori >= 3
 	! [魔术师] main >= 8
 	refuse: 魔术师
 	refuse: 异色眼
-deck: EM魔术师 [10]
+deck: EM마술사 [10]
 	! [魔术师] main >= 8
 	! [娱乐伙伴] main >= 5
 	refuse: 魔术师
 	refuse: EM
-deck: 霸王魔术师 [10]
+deck: 패왕마술사 [10]
 	! [魔术师] main >= 6
 	! 16306932 main >= 2 # 超天新龙
 	! 69610326 main >= 1 # 霸王眷龙 暗黑亚龙
 	! 96227613 main >= 1 # 霸王门 零
 	refuse: 霸王门
 	refuse: 魔术师
-deck: EM异色眼魔术师 [20]
+deck: EM오드아이즈마술사 [20]
 	! 天空的虹彩 main >= 1
 	! [异色眼] ori >= 3
 	! [魔术师] main >= 8
@@ -539,7 +539,7 @@ deck: EM异色眼魔术师 [20]
 	refuse: 魔术师
 	refuse: 异色眼
 	refuse: EM
-deck: EM霸王魔术师 [20]
+deck: EM패왕마술사 [20]
 	! [魔术师] main >= 8
 	! [娱乐伙伴] main >= 5
 	! 16306932 main >= 2 # 超天新龙
@@ -550,13 +550,13 @@ deck: EM霸王魔术师 [20]
 	refuse: 异色眼
 	refuse: EM
 
-deck: 十二兽魔术师 [10]
+deck: 십이수마술사 [10]
 	! [十二兽] main > 2
 	! [魔术师] main >= 9
 	! [灵摆读阵] main >= 2
 	refuse: 十二兽
 	refuse: 魔术师
-deck: 十二兽坏兽魔术师 [20]
+deck: 십이수파괴수마술사 [20]
 	! [十二兽] main > 2
 	! [魔术师] main >= 9
 	! [灵摆读阵] main >= 2
@@ -567,7 +567,7 @@ deck: 十二兽坏兽魔术师 [20]
 	refuse: 魔术师
 	refuse: 坏兽
 
-deck: 魔术师召唤兽 [10]
+deck: 마술사소환수 [10]
 	! [魔术师] main >= 9
 	! [灵摆读阵] main >= 2
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
@@ -575,7 +575,7 @@ deck: 魔术师召唤兽 [10]
 	refuse: 魔术师
 	refuse: 召唤兽
 
-deck: 炼装魔术师 [10]
+deck: 메탈포제마술사 [10]
 	! [炼装] main >= 6
 	! [魔术师] main >= 6
 	! [灵摆读阵] main >= 2
@@ -589,11 +589,11 @@ deck: 射手65 [10]
 	refuse: 六武众
 	refuse: 亚马逊
 
-deck: 地中占术姬 [10]
+deck: 地中점술공주 [10]
 	! [地中族] main >= 6
 	! 圣占术姬 塔罗光巫女 main >= 2
 	refuse: 圣占术姬
-deck: 影依占术姬 [10]
+deck: 섀도르점술공주 [10]
 	! [影依] main >= 6
 	! 圣占术姬 塔罗光巫女 main >= 2
 	refuse: 圣占术姬
@@ -605,7 +605,7 @@ deck: 影依占术姬 [10]
 #	refuse: 银河
 #	refuse: 电子龙
 
-deck: 银河ABC [10]
+deck: 갤럭시ABC [10]
 	! 银河战士 main >= 3
 	! A-突击核 main >= 1
 	! B-破坏龙兽 main >= 1
@@ -613,7 +613,7 @@ deck: 银河ABC [10]
 	! ABC-神龙歼灭者 ex >= 1
 	refuse: 银河
 	refuse: ABC
-deck: 电子ABC [10]
+deck: 사이버ABC [10]
 	! [电子龙] main >= 2
 	! A-突击核 main >= 1
 	! B-破坏龙兽 main >= 1
@@ -621,7 +621,7 @@ deck: 电子ABC [10]
 	! ABC-神龙歼灭者 ex >= 1
 	refuse: 电子龙
 	refuse: ABC
-deck: 银河电子ABC [20]
+deck: 갤럭시사이버ABC [20]
 	! 银河战士 main >= 3
 	! [电子龙] main >= 3
 	! A-突击核 main >= 1
@@ -632,7 +632,7 @@ deck: 银河电子ABC [20]
 	refuse: 电子龙
 	refuse: ABC
 
-deck: 虫惑魔古遗物 [10]
+deck: 충혹마아티팩트 [10]
 	! [古遗物] main >= 6
 	! [虫惑魔] main >= 3
 	refuse: AF
@@ -650,43 +650,43 @@ deck: HAT [20]
 	refuse: 冰火手
 	refuse: AF
 
-deck: 圣刻白龙 [10]
+deck: 성각백룡 [10]
 	! [圣刻] main >= 4
 	! 青眼白龙 main >= 2
 	refuse: 圣刻
 	refuse: 白龙
 
-deck: AF先史 [10]
+deck: AF오파츠 [10]
 	! [古遗物] main >= 6
 	! [先史遗产] main >= 5
 	refuse: AF
 
-deck: 幻煌异兽 [10]
+deck: 환황异兽 [10]
 	! [幻煌龙] main >= 4
 	! [伯吉斯异兽] main >= 4
 	refuse: 伯吉斯异兽
-deck: 青蛙异兽 [10]
+deck: 개구리异兽 [10]
 	! [青蛙] main >= 3
 	! [伯吉斯异兽] >= 5
 	refuse: 青蛙
 	refuse: 伯吉斯异兽
-deck: 扰乱异兽 [10]
+deck: 방해꾼异兽 [10]
 	! [扰乱] main >= 5
 	! [伯吉斯异兽] >= 5
 	refuse: 扰乱
 	refuse: 伯吉斯异兽
 
-deck: 银河光子 [10]
+deck: 갤럭시포톤 [10]
 	! [银河] main >= 6
 	! [光子] main >= 4
 	refuse: 银河
 
-deck: 海皇水精鳞 [10]
+deck: 해황머메일 [10]
 	! [海皇] main >= 6 
 	! [水精鱗] main > 4
 	refuse: 海皇
 	refuse: 水精鱗
-deck: 次世代海皇水精鳞 [20]
+deck: 제넥스해황머메일 [20]
 	! [海皇] main >= 6 
 	! [水精鱗] main > 4
 	! 68505803 main >= 1 # 次世代控制员
@@ -705,45 +705,45 @@ deck: PKRR [10]
 	! [急袭猛禽] main >= 6
 	refuse: 幻影骑士团
 
-deck: 炼装甲虫 [10]
+deck: 메탈포제甲虫 [10]
 	! [甲虫装机] main >= 6
 	! [炼装] main >= 4
 	refuse: 甲虫装机
 	refuse: 炼装
 
-deck: 机巧齿轮齿轮 [10]
+deck: 자동기계가제트가제트 [10]
 	! [机巧] main >= 3
 	! [齿轮齿轮] main >= 5
 
-deck: 代行星杯 [10]
+deck: 대행자성잔 [10]
 	! [星杯] main >= 6
 	! 64734921 main >= 1 # 金星
 	refuse: 星杯
 
-deck: WW淘气仙星 [10]
+deck: WW트릭스터 [10]
 	! [风魔女] main >= 3
 	! [淘气仙星] main >= 6
 	refuse: 风魔女
 	refuse: 同调系
 	refuse: 淘气仙星
 
-deck: 闪刀淘气 [10]
+deck: 섬도淘气 [10]
 	! [闪刀] ori >= 5
 	! [淘气仙星] main >= 6
 	refuse: 淘气仙星
 	refuse: 闪刀
 
-deck: 拷问秘旋谍 [10]
+deck: 拷问SPYRAL [10]
 	! [秘旋谍] ori >= 10
 	! 75732622 main >= 1 # 拷问巨人
 	refuse: 拷问
 
 #### 从sets.deckdef中摘出来的疑难杂症人群(共计4枚)
 
-deck: 电子光虫
+deck: 사이버光虫
 	! [电子光虫] ori >= 9
 
-deck: 沉默 [2]
+deck: 사일런트매지션 [2]
 	! [沉默剑士] main >= 3
 	! [沉默魔术师] main >= 3
 	! 沉默魔导剑士 main >= 1
@@ -775,28 +775,28 @@ deck: 植物连接 [10]
 	refuse: 杯面
 	refuse: 捕食
 
-deck: 植物闪刀姬 [10]
+deck: 植物섬도희 [10]
 	! [闪刀] ori >= 10
 	! 15341821 main >= 1 # 蒲公英狮
 	refuse: 闪刀
-deck: 闪刀姬召唤兽 [10]
+deck: 섬도희소환수 [10]
 	! [闪刀] ori >= 7
 	! 86120751 main >= 1 # 召唤师 阿莱斯特
 	! 74063034 main >= 1 # 召唤魔术
 	refuse: 闪刀
 	refuse: 召唤兽
-deck: 魔王闪刀姬 [10]
+deck: 魔王섬도희 [10]
 	! [闪刀] ori >= 13
 	! 50383626 main >= 1 # 黯黑之魔王 迪亚波罗斯
 	refuse: 闪刀
 	refuse: 黯黑魔王
-deck: 闪刀刚鬼 [10]
+deck: 섬도강귀 [10]
 	! [闪刀] ori >= 6
 	! [刚鬼] ori >= 5
 	refuse: 闪刀
 	refuse: 刚鬼
 
-deck: 炼装神数 [10]
+deck: 메탈포제세피라 [10]
 	! [神数] ori >= 8
 	! [炼装] ori >= 8
 	refuse: 炼装
@@ -807,37 +807,37 @@ deck: 炼装神数 [10]
 #	! [幻影] ori >= 4
 #	refuse: 幻影骑士团
 
-deck: 自奏仙星 [10]
+deck: 트릭스터오르페골 [10]
 	! [自奏圣乐] ori >= 6
 	! [淘气仙星] ori >= 4
 	refuse: 自奏圣乐
 	refuse: 淘气仙星
 
-deck: 机甲自奏 [10]
+deck: 머시너즈오르페골 [10]
 	! [自奏圣乐] ori >= 7
 	! [机甲] ori >= 2
 	! 25274141 main >= 1 # 紧急行车时间表
 	refuse: 自奏圣乐
 	refuse: 机甲
 
-deck: 机界自奏 [10]
+deck: 성유물오르페골 [10]
 	! [自奏圣乐] ori >= 7
 	! [机界骑士系列] ori >= 6
 	refuse: 自奏圣乐
 	refuse: 机界骑士
 
-deck: 未界域暗黑界 [10]
+deck: 미계역암흑계 [10]
 	! [未界域] main >= 12
 	! [暗黑界] main >= 5
 	! 34230233 main >= 1 # 暗黑界的龙神
 	refuse: 未界域
 	refuse: 暗黑界
-deck: 影依黄金国 [10]
+deck: 섀도르엘드리치 [10]
 	! [影依] main > 6
 	! [黄金国] main >= 6
 	refuse: 影依
 	refuse: 黄金国
-deck: 武装龙扰乱 [10]
+deck: 방해꾼암드 [10]
 	! [武装龙] main >= 4
 	! [扰乱] main >= 6
 	refuse: 武装龙
