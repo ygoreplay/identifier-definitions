@@ -1542,7 +1542,7 @@ tag: 暗同调
 		! 81020646 ex >= 1 # 炼狱龙 食人魔龙鬼
 		! 74586817 ex >= 1 # PSY骨架王·Ω
 
-tag: 神殿守卫者
+tag: 신전의수호자
 	config: global
 	config: upgrade
 	! 神殿守卫者 main >= 1
