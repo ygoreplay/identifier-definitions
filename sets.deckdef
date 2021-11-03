@@ -2394,11 +2394,11 @@ set: 魔导兽系列
 	inner set: 魔导兽
 	94599451 # 魔导研究所
 	21984400 # 兽·魔·导
-deck: 마도兽 [0]
+deck: 매직비스트 [0]
 	! [魔导兽系列] main >= 9
 	refuse: 魔导兽
 	refuse: 魔力指示物
-tag: 마도兽
+tag: 매직비스트
 	config: global
 	! [魔导兽系列] main >= 4
 
