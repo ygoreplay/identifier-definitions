@@ -740,7 +740,7 @@ tag: 날개크리보
 	! 进化之翼 main >= 1
 	! 羽翼栗子球 LV10 main >= 1
 
-tag: 地狱暴风
+tag: 헬템피스트
 	config: global
 	config: upgrade
 	! 地狱暴风 main >= 2

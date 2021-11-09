@@ -417,7 +417,7 @@ tag: 大气圈神鸟
 ## 石蒜花
 ## 到来(英雄到来？
 
-tag: 异星
+tag: 혹마전
 	config: global
 	config: upgrade
 	! [融合] main >= 1
